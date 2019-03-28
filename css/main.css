@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .formularios{
-	background:linear-gradient(168deg,rgb(0,146,69), rgb(2, 167, 156)1%);
+	background:linear-gradient(168deg,rgb(0,146,69), rgb(2, 167, 156));
 	background-repeat: no-repeat;
 	height:100vh;
 }
