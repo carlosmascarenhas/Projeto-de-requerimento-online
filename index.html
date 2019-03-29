@@ -11,28 +11,45 @@
 </head>
 
 <body>
-  <section class="formularios">
-    <h1 class="titulo">REQUERIMENTO ONLINE ff</h1>
+  <section class="formularios"><!--criei uma classe para colocar dentro todos os meus formulários-->
+    <h1 class="titulo">REQUERIMENTO ONLINE</h1> 
     <div class="forms">
-      <div class="active">
-        <button type="button" class="btn-login">login <span class="linha"></span></button>
-        <form class="form-login">
+      <div class="estudante-active"><!--criei um dos botões responsáveis por efetuar a troca de usuário-->
+        <button type="button" class="btn-estudante">Estudante<span class="linha"></span></button>
+        <form class="form-estudante"><!--formulário do estudante-->
           <fieldset>
             <legend>Por favor preencha todos os campos a baixo</legend>
             <div class="input">
-              <label for="login-email">E-mail</label>
-              <input type="email" id="login-email" required>
+              <label for="ra">RA</label>
+              <input type="number" id="ra" required>
             </div>
             <div class="input">
-              <label for="login-senha">Senha</label>
-              <input type="password" id="login-senha" required>
+              <label for="senha-aluno">Senha</label>
+              <input type="password" id="senha-aluno" required>
             </div>
           </fieldset>
-          <button type="submit" class="btn2-login">Login</button>
-        </form>
-      </div>
-    </div>
-  </section>
+          <button type="submit" class="btn-login">Login</button><!--botão de login-->
+        </form><!--fim do formulário de estudante-->
+      </div><!--fim da área do estudante-->
+      <div class="servidor-active"><!--inicio do espaço do servidor-->
+        <button type="button" class="btn-servidor">Servidor<span class="linha"></span></button><!--botão responsável em efetuar troca de usuário-->
+        <form class="servidor-login"><!--inicio do formulário do servidor-->
+          <fieldset>
+            <legend>Preencha todos os campos</legend>
+            <div class="input">
+              <label for="siape-servidor">Siape</label>
+              <input type="number" id="siape-servidor" required>
+            </div>
+            <div class="input">
+              <label for="senha-servidor">Senha</label>
+              <input type="password" id="senha-servidor">
+            </div>
+          </fieldset>
+          <button type="submit" class="btn-login2">Login</button>
+        </form><!--fim do formulário do servidor-->
+      </div><!--fim do espaço do servidor-->
+    </div><!--fim do meu formulário-->
+  </section><!--fim da minha seção-->
 
 
 
