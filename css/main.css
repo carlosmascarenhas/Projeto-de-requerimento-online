@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 body{
     background-size: 200% 100% !important;
-    animation: move 20s linear infinite;
+    animation: move 18s ease infinite;
     transform: translate3d(0, 0, 0);
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
     height: 100vh
@@ -280,8 +280,8 @@ body{
 	font-size: 16px;
 	line-height: 40px;
 	color: #3b4465;
-  background: rgba(214, 215, 216, 0.959);
-  border: 1px solid #cddbef;
+  	background: rgba(214, 215, 216, 0.959);
+  	border: 1px solid #cddbef;
 	border-radius: 8px;
 	outline: none;
 	font-family: 'Muli', sans-serif;
