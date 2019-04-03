@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Muli');
 body{
-    margin: 0;
-    padding: 0;
-    background: -webkit-linear-gradient(95deg, #00a99d, #009245);
-		height: 100vh;
-		width: 100%;
+    background-size: 200% 100% !important;
+    animation: move 20s linear infinite;
+    transform: translate3d(0, 0, 0);
+    background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
+    height: 100vh
 }
 *,
 *::before,
@@ -351,6 +351,19 @@ a #texto{
 }
 a:link{
 	text-decoration: none;
+}
+@keyframes move {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
 }
  
  
