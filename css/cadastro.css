@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Muli', sans-serif;
-    background-size: 200% 200% !important;
+    background-size: 200% 100% !important;
     animation: move 10s ease infinite;
     transform: translate3d(0, 0, 0);
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
