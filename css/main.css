@@ -6,7 +6,7 @@ body{
     animation: move 18s ease infinite;
     transform: translate3d(0, 0, 0);
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
-    height: 100vh
+    height: 100vh;
 }
 *,
 *::before,
@@ -366,14 +366,7 @@ a:link{
         background-position: 0 0
     }
 }
-.logoif{
-	background: url(../img/logoif.png) no-repeat;
-	width: 80px;
-	height: 100px;
-	background-size: 100%;
-	color: #fff;
-	margin-right: 800px;
-}
+
  
  
   
