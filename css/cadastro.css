@@ -14,13 +14,16 @@ body {
     animation: move 10s ease infinite;
     transform: translate3d(0, 0, 0);
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
-    max-height: 100%;
+    height: 100vh;
+ 
 }
 
 .cadastro {
-    width: 90%;
-    max-width: 340px;
-    margin: 10vh auto;
+    display:flex;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .cadastro_header {
@@ -40,6 +43,7 @@ body {
 }
 
 .form {
+    width: 330px;
     margin-top: 40px;
     border-radius: 6px;
     overflow: hidden;
@@ -111,7 +115,8 @@ input:focus {
     }
 }
 .logo{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 20px;
+    margin: auto 20px;
+    position: absolute;
+    right:0;
+    bottom: 15px;
 }
