@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +14,13 @@ body {
     height: 100vh
 }
 
-.user {
+.cadastro {
     width: 90%;
     max-width: 340px;
     margin: 10vh auto;
 }
 
-.user_header {
+.cadastro_header {
     text-align: center;
     opacity: 0;
     transform: translate3d(0, 500px, 0);
@@ -31,6 +31,9 @@ body {
     margin-bottom: -10px;
     font-weight: 500;
     color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18;
+
 }
 
 .form {
@@ -42,12 +45,6 @@ body {
     animation: arrive 500ms ease-in-out 0.9s forwards;
 }
 
-.form--no {
-    animation: NO 1s ease-in-out;
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
 .form_input {
     display: block;
     width: 100%;
@@ -57,23 +54,14 @@ body {
     border: 0;
     outline: 0;
     transition: 0.3s;
-}
-.form-control{
-    display: block;
-    width: 100%;
-    padding: 20px;
-    font-family: 'Muli',sans-serif;
-    border: 0;
-    outline: 0;
-    transition: 0.3s;
+    font-display:'Source Sans Pro', sans-serif;
+    font-size:14px;
+    color: #0d2b1b;
 }
 
 input:focus {
     background-color: rgb(243, 247, 247);
-  }
-  .form-control:focus {
-    background-color: rgb(243, 247, 247);
-  }
+}
 .btn {
     display: block;
     width: 100%;
@@ -83,30 +71,13 @@ input:focus {
     outline: 0;
     border: 0;
     color: white;
-    background: rgb(62, 156, 62);
+    background: rgb(19, 58, 110);
     transition: 0.3s;
     cursor: pointer;
 }
     .btn:hover {
-        background:rgb(48, 167, 48);
+        background:rgb(20, 7, 49);
     }
-
-@keyframes NO {
-  from, to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%, 40%, 60%, 80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
 
 @keyframes arrive {
     0% {
