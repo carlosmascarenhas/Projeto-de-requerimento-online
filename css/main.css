@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 body{
     background-size: 200% 100% !important;
     animation: move 18s ease infinite;
@@ -27,14 +28,11 @@ body{
 	position: relative;
 	top: 2rem;
 	margin: 0 2rem;
-	background-color: #fff;
 	max-width: 250px;
-	padding: 12px;
-	border-radius: 7px;
-	font-size: 13px;
+	font-size: 18px;
 	text-align: center;
-	font-family: "Open sans", sans-serif;
-	color:#1BD56F;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:rgb(255, 255, 255);
 }
 
 .forms {
