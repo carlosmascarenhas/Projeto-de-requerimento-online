@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 body{
     background-size: 200% 100% !important;
-    animation: move 18s ease infinite;
+    animation: move 10s ease infinite;
     transform: translate3d(0, 0, 0);
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
 	height: 100vh;
