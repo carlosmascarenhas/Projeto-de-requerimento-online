@@ -9,10 +9,6 @@
 }
 
 body {
-    font-family: 'Muli', sans-serif;
-    background-size: 200% 100% !important;
-    animation: move 10s ease infinite;
-    transform: translate3d(0, 0, 0);
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
     height: 100vh;
  
@@ -119,23 +115,9 @@ input:focus {
         transform: translate3d(0, 0, 0);
     }
 }
-
-@keyframes move {
-    0% {
-        background-position: 0 0
-    }
-
-    50% {
-        background-position: 100% 0
-    }
-
-    100% {
-        background-position: 0 0
-    }
-}
 .logo{
-    margin: auto 20px;
     position: absolute;
-    right:0;
-    bottom: 15px;
+    left:0;
+    top: 0;
+    margin: 2rem 2rem;
 }
