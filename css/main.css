@@ -23,18 +23,18 @@ body{
 
 .section-title {
 	position: absolute;
-	top: 12px;
+	top: 22px;
 	left: 24px;
-	font-size: 18px;
+	font-size: 22px;
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color:rgb(255, 255, 255);
 }
 
 .forms {
 	display: flex;
 	align-items: flex-start;
-	margin-top: 30px;
+	margin-top: 45px;
 }
 
 .form-wrapper {
