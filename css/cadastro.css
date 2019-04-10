@@ -10,18 +10,14 @@
 }
 
 body {
-<<<<<<< HEAD
   font-family: 'Muli', sans-serif;
   background-size: 200% 100% !important;
   animation: move 10s ease infinite;
   transform: translate3d(0, 0, 0);
   background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
   height: 100vh;
-=======
-    background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
-    height: 100vh;
- 
->>>>>>> e18737c2fd7b2b20efda00ac79d373fa6173a250
+  background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
+  height: 100vh;
 }
 
 .cadastro {
@@ -130,7 +126,6 @@ input:focus {
     transform: translate3d(0, 0, 0);
   }
 }
-<<<<<<< HEAD
 
 @keyframes move {
   0% {
@@ -151,11 +146,10 @@ input:focus {
   position: absolute;
   right: 0;
   bottom: 15px;
-=======
-.logo{
+
+  .logo {
     position: absolute;
-    left:0;
+    left: 0;
     top: 0;
     margin: 2rem 2rem;
->>>>>>> e18737c2fd7b2b20efda00ac79d373fa6173a250
-}
+  }
