@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 body{
-    background-size: 200% 100% !important;
-    animation: move 10s ease infinite;
-    transform: translate3d(0, 0, 0);
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
 	height: 100vh;
 }
@@ -25,20 +22,19 @@ body{
 }
 
 .section-title {
-	position: relative;
-	top: 2rem;
-	margin: 0 2rem;
-	max-width: 250px;
-	font-size: 18px;
+	position: absolute;
+	top: 22px;
+	left: 24px;
+	font-size: 22px;
 	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color:rgb(255, 255, 255);
 }
 
 .forms {
 	display: flex;
 	align-items: flex-start;
-	margin-top: 30px;
+	margin-top: 45px;
 }
 
 .form-wrapper {
@@ -71,7 +67,7 @@ body{
 	margin-left: 10rem;
 	padding: 0;
 	text-transform: uppercase;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
 	letter-spacing: .5px;
 	color: rgb(214, 210, 210);
@@ -89,7 +85,7 @@ body{
 	margin-left: 6rem;
 	padding: 0;
 	text-transform: uppercase;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
 	letter-spacing: .5px;
 	color: rgb(214, 210, 210);
@@ -351,24 +347,11 @@ a #texto{
 a:link{
 	text-decoration: none;
 }
-@keyframes move {
-    0% {
-        background-position: 0 0
-    }
-
-    50% {
-        background-position: 100% 0
-    }
-
-    100% {
-        background-position: 0 0
-    }
-}
 .logo{
     margin: auto 20px;
     position: absolute;
     right:0;
-    bottom: 15px;
+    bottom: 22px;
 }
 
  
