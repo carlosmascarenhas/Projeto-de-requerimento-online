@@ -2,96 +2,100 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Muli');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Muli', sans-serif;
-    background-size: 200% 100% !important;
-    animation: move 10s ease infinite;
-    transform: translate3d(0, 0, 0);
-    background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
-    height: 100vh;
- 
+  font-family: 'Muli', sans-serif;
+  background-size: 200% 100% !important;
+  animation: move 10s ease infinite;
+  transform: translate3d(0, 0, 0);
+  background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
+  height: 100vh;
 }
+
 .cadastro {
-    display:flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .cadastro_header {
-    text-align: center;
-    opacity: 0;
-    transform: translate3d(0, 500px, 0);
-    animation: arrive 500ms ease-in-out 0.7s forwards;
+  text-align: center;
+  opacity: 0;
+  transform: translate3d(0, 500px, 0);
+  animation: arrive 500ms ease-in-out 0.7s forwards;
 }
 
 .titulo {
-    margin-bottom: -10px;
-    font-weight: 500;
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18;
-
+  margin-bottom: -10px;
+  font-weight: 500;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18;
 }
 
 .form {
-    width: 330px;
-    margin-top: 40px;
-    border-radius: 6px;
-    overflow: hidden;
-    opacity: 0;
-    transform: translate3d(0, 500px, 0);
-    animation: arrive 500ms ease-in-out 0.9s forwards;
+  width: 330px;
+  margin-top: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate3d(0, 500px, 0);
+  animation: arrive 500ms ease-in-out 0.9s forwards;
 }
 
 .form_input {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    font-family: 'Muli',sans-serif;
-    -webkit-appearance: none;
-    border: 0;
-    outline: 0;
-    transition: 0.3s;
-    font-family:'Source Sans Pro', sans-serif;
-    font-size:14px;
-    color: #0d2b1b;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Muli', sans-serif;
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  transition: 0.3s;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  color: #0d2b1b;
 }
 
 input:focus {
-    background-color: rgb(243, 247, 247);
-    font-size: 17px;
-    font-family: 'Muli', sans-serif;    
-    color: #3b4465;
+  background-color: rgb(243, 247, 247);
+  font-size: 17px;
+  font-family: 'Muli', sans-serif;
+  color: #3b4465;
 }
+
 .form--no {
-    animation: NO 1s ease-in-out;
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
+  animation: NO 1s ease-in-out;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
+
 .btn {
-    display: block;
-    width: 100%;
-    padding: 20px;
-    font-family: 'Muli',sans-serif;
-    -webkit-appearance: none;
-    outline: 0;
-    border: 0;
-    color: white;
-    background: rgb(19, 58, 110);
-    transition: 0.3s;
-    cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Muli', sans-serif;
+  -webkit-appearance: none;
+  outline: 0;
+  border: 0;
+  color: white;
+  background: rgb(19, 58, 110);
+  transition: 0.3s;
+  cursor: pointer;
 }
-    .btn:hover {
-        background:rgb(33, 84, 194);
-    }
+
+.btn:hover {
+  background: rgb(33, 84, 194);
+}
+
 @keyframes NO {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
@@ -108,34 +112,36 @@ input:focus {
     transform: translate3d(10px, 0, 0);
   }
 }
+
 @keyframes arrive {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 50px, 0);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @keyframes move {
-    0% {
-        background-position: 0 0
-    }
+  0% {
+    background-position: 0 0
+  }
 
-    50% {
-        background-position: 100% 0
-    }
+  50% {
+    background-position: 100% 0
+  }
 
-    100% {
-        background-position: 0 0
-    }
+  100% {
+    background-position: 0 0
+  }
 }
-.logo{
-    margin: auto 20px;
-    position: absolute;
-    right:0;
-    bottom: 15px;
+
+.logo {
+  margin: auto 20px;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
 }
