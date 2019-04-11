@@ -1,4 +1,4 @@
-const switchers = [...document.querySelectorAll('.botao')]
+const switchers = [...document.querySelectorAll('.botao,.form')]
 
 switchers.forEach(item => {
 	item.addEventListener('click', function() {

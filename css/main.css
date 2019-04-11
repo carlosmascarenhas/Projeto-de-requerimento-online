@@ -286,6 +286,11 @@ body{
     border-radius: 8px;
     outline: none;
     font-family: 'Muli', sans-serif;
+    visibility: hidden;
+}
+
+.is-active .input-block input{
+    visibility: visible;
 }
 
 .form [type='submit']{
