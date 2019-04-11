@@ -1,74 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <title>Requerimento Online</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <title>Requerimento Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="logo">
-    <img src="img/logoif.png" alt='some text' width=60 height=80>
-  </div>
-  <h1 class="section-title">REQUERIMENTO ONLINE</h1>
-  <section class="forms-section">
-    <div class="forms">
-      <div class="form-wrapper is-active">
-        <button type="button" class="switcher switcher-login">
-          ALUNO
-          <span class="underline"></span>
-        </button>
-        <form class="form form-login">
-          <fieldset>
-            <legend>Please, enter your email and password for login.</legend>
-            <div class="input-block">
-              <div class="img"></div>
-              <label for="RA">RA</label>
-              <input id="RA" type="text" required>
-            </div>
-            <div class="input-block">
-              <label for="senha">Senha</label>
-              <input id="senha" type="password" required>
-              <div class="cadastro">
-                <a id="link1" href="cadastro.html">
-                  <p id="texto">Não registrado? <span class="cor">Cadastre-se</span></p>
-                </a>
-              </div>
-            </div>
-          </fieldset>
-          <button type="submit" class="btn-login">login</button>
-        </form>
-      </div>
-      <div class="form-wrapper">
-        <button type="button" class="switcher switcher-signup">
-          SERVIDOR
-          <span class="underline"></span>
-        </button>
-        <form class="form form-signup">
-          <fieldset>
-            <legend>Please, enter your email, password and password confirmation for sign up.</legend>
-            <div class="input-block">
-              <div class="img2"></div>
-              <label for="siape">Siape</label>
-              <input id="siape" type="text" required>
-            </div>
-            <div class="input-block">
-              <label for="senha">Senha</label>
-              <input id="senha" type="password" required>
-            </div>
-          </fieldset>
-          <button type="submit" class="btn-signup">login</button>
-        </form>
-      </div>
-    </div>
-  </section>
-  <div class="logo">
-    <img src="img/logoif.png" alt='some text' width=60 height=80>
-  </div>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
+    
+    <h1 class="titulo">REQUERIMENTO ONLINE</h1>
+    <section class="formulario"> <!--criação dos formulários-->
+        <div class="forms">
+            <div class="form-login is-active"><!--inicio formulário aluno-->
+                <button type="button" class="botao botao-aluno">ALUNO<span class="linha"></span></button>
+                <form class="form aluno-login">
+                    <fieldset>
+                        <legend>Por gentileza preencha todos os campos abaixo.</legend>
+                        <div class="input-block">
+                            <div class="aluno-img"></div>
+                            <label for="RA">RA</label>
+                            <input id="RA" type="number" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="senha">Senha</label>
+                            <input id="senha" type="password" required>
+                        </div>
+                        <div class="cadastro_aluno">
+                            <a id="cadastro" href="cadastro.html">
+                                <p id="text-cadastro">Não registrado?<span class="cor"> Cadastre-se</span></p>
+                            </a>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn-login-aluno">login</button>
+                </form>
+            </div> <!--término do formulário aluno-->
+            <div class="form-login"> <!--inicio do formulário servidor-->
+                <button type="button" class="botao botao-servidor">SERVIDOR<span class="linha"></span></button>
+                <form class="form servidor-login">
+                    <fieldset>
+                        <legend>Por gentileza preencha todos os campos abaixo.</legend>
+                        <div class="input-block">
+                            <div class="servidor-img"></div>
+                            <label for="siape">Siape</label>
+                            <input id="siape" type="number" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="senha">Senha</label>
+                            <input id="senha" type="password" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn-login-servidor">login</button>
+                </form>
+            </div><!--término do formulário servidor-->
+        </div>
+    </section>  
+</body>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </html>
