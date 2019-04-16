@@ -1,8 +1,8 @@
-const switchers = [...document.querySelectorAll('.botao,.form')]
+const troca = [...document.querySelectorAll('.botao')]
 
-switchers.forEach(item => {
+troca.forEach(item => {
 	item.addEventListener('click', function() {
-		switchers.forEach(item => item.parentElement.classList.remove('is-active'))
+		troca.forEach(item => item.parentElement.classList.remove('is-active'))
 		this.parentElement.classList.add('is-active')
 	})
 })
