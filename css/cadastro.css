@@ -40,8 +40,7 @@ body {
 }
 
 .form {
-  max-width: 330px;
-  width: 450px;
+  width: 380px;
   margin-top: 40px;
   border-radius: 6px;
   overflow: hidden;
@@ -60,13 +59,12 @@ body {
   outline: 0;
   transition: 0.3s;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 19px;
   color: #0d2b1b;
 }
 
 input:focus {
   background-color: rgb(243, 247, 247);
-  font-size: 17px;
   font-family: 'Muli', sans-serif;
   color: #3b4465;
 }
