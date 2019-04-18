@@ -12,9 +12,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-size: 200% 100% !important;
-    animation: move 10s ease infinite;
-    transform: translate3d(0, 0, 0);
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
     height: 100vh;
 }
@@ -40,7 +37,7 @@ body{
 .forms{
     display: flex;
     align-items: flex-start;
-    margin-top:45px; 
+    margin-top:45px;
 }
 .form-login{
     animation: hideLayer .3s ease-out forwards;
@@ -65,7 +62,7 @@ body{
         z-index: 1;
     }
 }
- 
+
 .botao-aluno{
     position: relative;
     cursor: pointer;
@@ -182,16 +179,16 @@ body{
         background-color: #fff;
         transform: translate(35%, -20px);
       }
-    
+
       50% {
         transform: translate(0, 0);
       }
-    
+
       100% {
         background: #DDDBDB;
         transform: translate(40%, 10px);
       }
-}  
+}
 
 .servidor-login{
     animation: hideServidor .3s ease-out forwards;
@@ -206,27 +203,27 @@ body{
       background: #d7e7f1;
       transform: translate(-40%, 10px) scaleY(.8);
     }
-  
+
     50% {
       transform: translate(0, 0) scaleY(.8);
     }
-  
+
     100% {
       background-color: #fff;
       transform: translate(-35%, -20px) scaleY(1);
     }
   }
-  
+
   @keyframes hideServidor {
     0% {
       background-color: #fff;
       transform: translate(-35%, -20px) scaleY(1);
     }
-  
+
     50% {
       transform: translate(0, 0) scaleY(.8);
     }
-  
+
     100% {
       background: #DDDBDB;
       transform: translate(-40%, 10px) scaleY(.8);
@@ -301,7 +298,7 @@ body{
     font-size: 18px;
     line-height: 40px;
     border-radius: 19px;
-    border: none; 
+    border: none;
     transition: all .3s ease-out
 }
 
@@ -360,35 +357,3 @@ a #text-cadastro{
 a:link{
     text-decoration: none;
 }
-
-@keyframes move {
-    0% {
-      background-position: 0 0
-    }
-  
-    50% {
-      background-position: 100% 0
-    }
-  
-    100% {
-      background-position: 0 0
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
