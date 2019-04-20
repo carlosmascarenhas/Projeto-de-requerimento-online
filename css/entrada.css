@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:200');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body{
   margin: 0;
   padding: 0;
@@ -6,6 +11,9 @@ body{
 .nav-top{
   width: 100vw;
   height:80px;
+  background-size: 200% 100% !important;
+  animation: move 8s ease-in infinite;
+  transform: translate3d(0, 0, 0);
   background: linear-gradient(100005deg, #00a99d 10%, #009245 90%);
   position: absolute;
   top: 0;
@@ -140,4 +148,17 @@ h3{
 
 .btn.is-active .linha::before{
   transform: translateX(0);
+}
+@keyframes move {
+  0% {
+      background-position: 0 0
+  }
+
+  50% {
+      background-position: 100% 0
+  }
+
+  100% {
+      background-position: 0 0
+  }
 }
