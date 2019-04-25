@@ -56,7 +56,6 @@ body {
   display: block;
   width: 100%;
   padding: 20px;
-  font-family: 'Muli', sans-serif;
   -webkit-appearance: none;
   border: 0;
   outline: 0;
@@ -69,7 +68,7 @@ body {
 input:focus {
   background-color: rgb(243, 247, 247);
   font-family: 'Muli', sans-serif;
-  color: #3b4465;
+  color: #756874;
   font-size: 18px;
 }
 

@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-size: cover;
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
     height: 100vh;
@@ -17,15 +17,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  
   }
-  
   .titulo {
     margin-bottom: -10px;
     font-weight: 500;
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 32px;
+    font-size: 25px;
   }
   .steps{
     width: 370px;
@@ -40,35 +38,30 @@ body{
   }
   
   input[type=submit]{
-    background: #f1783c;
-    border: none;
-    padding: 0px;
-    margin: 0 auto;
+    display: block;
     width: 100%;
-    height: 55px;
-    border-radius: 0px 0px 3px 3px;
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
     color: white;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 11px;
-    letter-spacing: 1px;
+    background: rgb(29, 78, 143);
+    transition: 0.3s;
     cursor: pointer;
-    transition: background 0.3s ease;
-    outline: none;
   }
   
   input[type=submit]:hover{
-    background: #8fde9c;
+    background: rgb(33, 84, 194);
   }
   
   label{
-    background: rgb(230, 230, 230);
+    background: rgb(255, 255, 255);
     height: 69px;
     line-height: 69px;
     width: 100%;
     display: block;
-    border-bottom: 1px solid #a4a6a8;
-    color: #889199;
+    color: #919191;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 11px;
@@ -82,7 +75,7 @@ body{
     content:"";
     width: 12px;
     height: 12px;
-    border: 2px solid #8f959c;
+    border: 2px solid #07a85d;
     display: block;
     position: absolute;
     margin: 26px 0px 0px 18px;
@@ -95,8 +88,7 @@ body{
   }
   
   label:hover{
-    background: rgb(191, 199, 204);
-    color: #195e2a
+    background: rgb(225, 227, 228);
   }
   
   label:hover:before{
