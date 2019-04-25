@@ -42,13 +42,14 @@ body {
 }
 
 .form {
-  width: 340px;
+  width: 390px;
   margin-top: 40px;
   border-radius: 6px;
   overflow: hidden;
   opacity: 0;
   transform: translate3d(0, 500px, 0);
   animation: arrive 500ms ease-in-out 0.4s forwards;
+  box-shadow: 8px 4px 14px -6px rgba(27, 63, 34, 0.952);
 }
 
 .form_input {
@@ -87,7 +88,7 @@ input:focus {
   outline: 0;
   border: 0;
   color: white;
-  background: rgb(19, 58, 110);
+  background: rgb(29, 78, 143);
   transition: 0.3s;
   cursor: pointer;
 }
@@ -131,6 +132,6 @@ input:focus {
   position: absolute;
   left: 0;
   top: 28px;
-  transform: translate3d(0, 600px, 0);
+  transform: translate3d(0, 1000px, 0);
   animation: arrive 500ms ease-in-out 0.4s forwards;
 }

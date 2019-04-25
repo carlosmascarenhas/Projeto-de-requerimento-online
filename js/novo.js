@@ -23,10 +23,10 @@ function next(target) {
   } else {
     body.classList.remove('error');
 
-    var enable = document.querySelector('.jacare.on'),
+    var enable = document.querySelector('.abas.on'),
         nextEnable = enable.nextElementSibling;
     enable.classList.remove('on');
-    enable.classList.add('of');
+    enable.classList.add('off');
     nextEnable.classList.add('on');
 
     // Switch active class on left list
@@ -39,13 +39,13 @@ function next(target) {
 
 function keyDown(event) {
   var key = event.keyCode,
-      target = document.querySelector('jacare.on .button');
+      target = document.querySelector('.abas.on .button');
   if (key == 13 || key == 9) next(target);
 }
 
 var body = document.querySelector('body'),
     form = document.querySelector('form'),
-    count = form.querySelectorAll('.jacare').length;
+    count = form.querySelectorAll('.abas').length;
 
 window.onload = init;
 document.body.onmouseup = function (event) {

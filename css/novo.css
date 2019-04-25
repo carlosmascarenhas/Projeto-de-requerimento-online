@@ -20,37 +20,44 @@ body{
   transform: translate(-50%, -50%);
 }
 .selection{
-  position: relative;
-   min-width: 300px;
-   width: 300px;
-   min-height: 60px;
-   font-family: 'Muli' sans-serif;
-   color: #777;
-   font-weight: 300;
-   background-color: #fff;
-   box-shadow: 1px 2px 10px -2px rgba(0,0,0,0.3);
-   border-radius: 6px;
-   border: white;
-}
-.jacare{
-  position: absolute;
+  min-width: 300px;
   width: 300px;
-  height: 60px;
+  min-height: 60px;
+  background-color: white;
+  border: white;
+  color: #777;
+  box-shadow: 1px 2px 10px -2px rgba(0, 0, 0, 0.3);
+  border-radius:5px 0 0 5px;
+ 
+}
+.abas{
+  position: absolute;
+  min-width: 300px;
+  width: 300px;
+  min-height: 60px;
   background: white;
   border-radius: 3px;
   opacity: 0;
   transform: scale(0.2);
   transition: all 0.4s ease-in-out;
+  font-family: 'Muli', sans-serif;
+  border: white;
+  border-radius:5px 0 0 5px;
 }
-
-form .jacare.on {
+.abas.cont{
+ 
+}
+.abas.cont, textarea{
+  border-radius:3px; 
+}
+form .abas.on {
   z-index: 1;
   opacity: 1;
   transition: all 0.5s ease-out 0.2s;
   transform: scale(1);
   animation: enable 0.5s ease-out 0.2s;
 }
-form .jacare.off {
+form .abas.off {
   opacity: 0;
   transition: all 0.3s ease-in;
   transform: translateY(120px) scale(0.9);
@@ -92,13 +99,19 @@ ul.itens li.active {
 .button{
   position: absolute;
   left: 300px;
-  bottom: 1px;
-  height: 59px;
-  width: 58px;
-  border-radius:2px;
+  top: 0.1px;
+  height: 60px;
+  width: 80px;
+  border-radius:0 5px 5px 0;
   background-color: #041167;
   overflow: none;
   border: white;
   color: white;
+  font-family: 'Muli', sans-serif;
+  cursor: pointer;
+  transition: background-color .3s ease-in;
+}
+.button:hover{
+  background-color: #1c2ea7;
 
 }
