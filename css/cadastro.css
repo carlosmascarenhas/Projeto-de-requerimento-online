@@ -13,13 +13,12 @@ body {
   font-family: 'Muli', sans-serif;
   background-size: cover;
   background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
-  height: 100vh;
-  overflow: hidden;
+  height: 108vh;
 }
 
 .cadastro{
   display: flex;
-  height: 100vh;
+  height: 108vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
