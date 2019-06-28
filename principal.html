@@ -5,15 +5,27 @@
   <meta charset="utf-8">
   <title>Projeto de Requerimento Online</title>
   <link rel="stylesheet" href="css/principal.css">
+  <script src="https://kit.fontawesome.com/4535967125.js"></script>
 </head>
 
 <body>
   <header>
-    <p id="icon">icon-menu</p>
-    <h1 id="titulo">Requerimento Online</h1>
-    <input type="search" id="busca_req" placeholder="Pesquise seu Requerimento">
-    <p id="icon-profile">icon-user</p>
+    <i class="fas fa-bars fa-lg icon"></i>
+    <h1 class="titulo">Requerimento Online</h1>
+    <input type="search" class="busca_req" placeholder="Pesquise seu Requerimento">
+    <p class="icon-profile">icon-user</p>
   </header>
+  <section class="menu-des">
+    <div class="icones nav nav-pills nav-justified">
+        <a class="active" href="#"><i class="fas fa-plus fa-lg icon-nav"><span class="titulo-icon">Novo Requerimento</span></i></a>
+        <a href="#"><i class="far fa-check-circle fa-lg icon-nav"><span class="titulo-icon">Requerimentos Deferidos</span></i></a>
+        <a href="#"><i class="far fa-times-circle fa-lg icon-nav"><span class="titulo-icon">Requerimentos Indeferidos</span></i></a>
+        <a href="#"><i class="far fa-clock fa-lg icon-nav"><span class="titulo-icon">Requerimentos Pendentes</span></i></a>
+    </div>
+  </section>
+  <script src='https://code.jquery.com/jquery-2.2.2.min.js'></script>
+  <script src="js/principal.js"></script>
 </body>
 
 </html>
+

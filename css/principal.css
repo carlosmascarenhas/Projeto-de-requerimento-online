@@ -11,28 +11,56 @@ header{
   flex-direction: row;
   background-color: #439B71;
 }
-header #icon{
+header .icon{
   margin: 0 20px;
+  color: #fff;
 }
-header #titulo{
-  font-size: 17px;
+header .titulo{
+  font-size: 1rem;
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
 }
-header #busca_req{
+header .busca_req{
   height: 38px;
   border-radius: 4px;
   outline: 0;
   border: 0;
+  font-size: 0.8rem;
   font-family: 'Source Sans Pro',sans-serif;
   padding-left: 1rem;
   margin: 0 50px;
   display: flex;
   flex: 2.2;
 }
-header #icon-profile{
+header .icon-profile{
   display: flex;
   justify-content: flex-end;
   flex:2.4;
   margin-right: 38px;
+}
+.menu-des{
+  background-color:#42484C;
+  height: 100vh;
+  width: 250px;
+  position: absolute;
+}
+.icones{
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0;
+}
+.icones .icon-nav{
+  margin: 2px 0;
+  cursor: pointer;
+  color: #C9C9C9;
+  padding: 20px 0 18px 19px;
+  width: 229px;
+
+}
+.titulo-icon{
+  position: relative;
+  bottom: 2px;
+  font-size: 0.9rem;
+  font-family: 'Source Sans Pro',sans-serif;
+  margin: 0 15px;
 }
