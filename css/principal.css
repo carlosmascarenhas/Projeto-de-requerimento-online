@@ -3,21 +3,19 @@ body{
   margin:0;
   padding: 0;
 }
-header{
+/*inicio da custonomização do cabeçalho*/
+header{           
   width: 100%;
   height: 58px;
   display: flex;
   align-items: center;
   flex-direction: row;
-  background-color: #439B71;
-}
-header .icon{
-  margin: 0 20px;
-  color: #fff;
-  cursor: pointer;
+  background-color:  #159952;
 }
 header .titulo{
-  font-size: 1rem;
+  position: relative;
+  margin: 0 42px;
+  font-size: 1.1rem;
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -29,25 +27,30 @@ header .busca_req{
   font-size: 0.8rem;
   font-family: 'Source Sans Pro',sans-serif;
   padding-left: 1rem;
-  margin: 0 50px;
   display: flex;
   flex: 0.5;
   flex-grow: 0.4;
+  margin: 0 35px;
 }
 header .icon-profile{
   margin-right: 15px;
 
 }
+/*término da custonomização do cabeçalho*/
+
+/*Inicio da custonomização do do menu deslizante*/
 .menu-des{
-  background-color:#42484C;
+  background-color:rgb(55, 57, 59);
   height: 100vh;
-  width: 250px;
+  width: 270px;
   position: absolute;
+  transition: all 0.8s ease;
 }
 .icones{
   display: flex;
   flex-direction: column;
   margin: 15px 0;
+  font-size:0.8rem; 
 }
 .icones .icon-nav{
   margin: 2px 0;
@@ -66,12 +69,13 @@ header .icon-profile{
 }
 
 a.active{
-  background-color: #303435;
-  transition: .4s ease-in .1s ;
+  background-color: #454849;
+  transition: transform 0.5s 0s ease-in-out;
+  transform: translateY(4px);
 }
-a:hover{
-  background-color: #303435;
-}
+/*término menu deslizantes*/
+
+/*inicio dropdown de perfil*/
 .menu{
   position: absolute;
   right: 0;
@@ -111,7 +115,6 @@ a:hover{
   width: 30px;
   margin-right: 13px;
 }
-
 .menu-dropdown {
   box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.3);
   opacity: 0;
@@ -130,7 +133,6 @@ a:hover{
 }
 .menu-dropdown .content {
   overflow: hidden;
-  
 }
 .menu-dropdown .content  ul {
   list-style: none;
@@ -146,11 +148,12 @@ a:hover{
   padding: 10px 10px;
   border-radius: 1px;
 }
-.menu-dropdown > .menu-button {
+.menu-dropdown  .menu-button {
   border: none;
   color: #000;
 }
-.menu-dropdown .content > ul > li:hover{
+.menu-dropdown .content  ul li:hover{
   background-color: rgb(51, 139, 88);
   color: #ffffff;
 }
+/*término dropdown perfil*/
