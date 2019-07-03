@@ -3,7 +3,9 @@ body{
   margin:0;
   padding: 0;
   overflow: hidden;
-
+}
+*{
+  box-sizing: border-box;
 }
 /*inicio da custonomização do cabeçalho*/
 header{
@@ -55,20 +57,18 @@ header .icon-profile{
   margin: 15px 0;
   font-size:0.8rem;
 }
-.icones .icon-nav{
+.icones .icone{
   margin: 2px 0;
   cursor: pointer;
   color: #C9C9C9;
-  padding: 20px 0 18px 19px;
-  width: 229px;
+  padding: 20px;
+  width: 100%;;
+  text-decoration: none;
+  font-family: 'Source Sans Pro',sans-serif;
 
 }
-.titulo-icon{
-  position: relative;
-  bottom: 2px;
-  font-size: 0.9rem;
-  font-family: 'Source Sans Pro',sans-serif;
-  margin: 0 15px;
+.icones .icone i {
+  margin-right: 8px;
 }
 
 a.active{
