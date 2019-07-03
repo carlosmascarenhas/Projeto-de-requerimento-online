@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projeto de Requerimento Online</title>
   <link rel="stylesheet" href="css/principal.css">
   <script src="https://kit.fontawesome.com/4535967125.js"></script>
@@ -24,27 +25,84 @@
       </div>
     </div>
   </header>
-  <section class="menu-des">
+  <nav class="menu-des">
     <div class="icones">
-        <a class="icone" href="#">
-          <i class="fas fa-plus fa-lg"></i>
-          Novo Requerimento
-        </a>
-        <a class="icone active" href="#">
-          <i class="far fa-check-circle fa-lg"></i>
-          Requerimentos Deferidos
-        </a>
-        <a class="icone" href="#">
-          <i class="far fa-times-circle fa-lg"></i>
-          Requerimentos Indeferidos
-        </a>
-        <a class="icone" href="#">
-          <i class="far fa-clock fa-lg"></i>
-          Requerimentos Pendentes
-        </a>
+      <a class="icone active" data-container="new-requirement" href="#">
+        <i class="fas fa-plus fa-lg"></i>
+        Novo Requerimento
+      </a>
+      <a class="icone" data-container="deferred-requirements" href="#">
+        <i class="far fa-check-circle fa-lg"></i>
+        Requerimentos Deferidos
+      </a>
+      <a class="icone" data-container="rejected-requirements" href="#">
+        <i class="far fa-times-circle fa-lg"></i>
+        Requerimentos Indeferidos
+      </a>
+      <a class="icone" data-container="pending-requirements" href="#">
+        <i class="far fa-clock fa-lg"></i>
+        Requerimentos Pendentes
+      </a>
     </div>
-  </section>
+  </nav>
+  <main>
+    <div class="new-requirement container">
+      <h1>Escolha o requerimento</h1>
+      <ul class="lista">
+        <li>
+          <a href="">
+            <img src="./img/historico.png" alt="">
+            <span>Historico</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./img/exame.png" alt="">
+            <span>Exame</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./img/enriquecimento_escolar.png" alt="">
+            <span>Enriquecimento</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./img/enriquecimento_escolar.png" alt="">
+            <span>Enriquecimento</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./img/enriquecimento_escolar.png" alt="">
+            <span>Enriquecimento</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./img/enriquecimento_escolar.png" alt="">
+            <span>Enriquecimento</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="./img/enriquecimento_escolar.png" alt="">
+            <span>Enriquecimento</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="deferred-requirements container displayNone">
+      <ul class="lista">
+        <li>Item 2</li>
+        <li>Item 2</li>
+        <li>Item 2</li>
+      </ul>
+    </div>
+  </main>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="js/principal.js"></script>
 </body>
+
 </html>

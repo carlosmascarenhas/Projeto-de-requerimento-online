@@ -65,7 +65,6 @@ header .icon-profile{
   width: 100%;;
   text-decoration: none;
   font-family: 'Source Sans Pro',sans-serif;
-
 }
 .icones .icone i {
   margin-right: 8px;
@@ -134,9 +133,13 @@ a.active{
   transform-origin: 0 0;
   padding-top: 44px;
 }
-.hideen {
+.hidden {
+  visibility: hidden;
+}
+.displayNone{
   display: none;
 }
+
 .menu-dropdown .content {
   overflow: hidden;
 }
@@ -163,3 +166,55 @@ a.active{
   color: #ffffff;
 }
 /*término dropdown perfil*/
+
+
+/* Main */
+main {
+  margin-left: 270px;
+}
+/* Fim da main */
+
+/* container */
+.container:not(.displayNone) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container:not(.displayNone) .lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.container:not(.displayNone) .lista li {
+
+  flex-basis: 160px;
+  margin-bottom: 30px;
+}
+.container:not(.displayNone) .lista a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.lista li img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+/* Fim container */
+
+
+@media screen and (max-width:320px){
+  main {
+    margin-left: 0;
+  }
+
+  .container:not(.displayNone) .lista {
+    grid-template-columns: repeat(1, minmax(160px, 1fr));;
+  }
+}
