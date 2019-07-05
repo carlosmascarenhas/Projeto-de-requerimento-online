@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
 body{
   margin:0;
   padding: 0;
-  overflow: hidden;
 }
 *{
   box-sizing: border-box;
@@ -15,6 +15,8 @@ header{
   align-items: center;
   flex-direction: row;
   background-color:  #159952;
+  position: fixed;
+  z-index: 1;
 }
 header .titulo{
   position: relative;
@@ -49,12 +51,13 @@ header .icon-profile{
   width: 270px;
   position: absolute;
   transition: all 0.8s ease;
+  position: fixed;
 
 }
 .icones{
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
+  margin: 80px 0;
   font-size:0.8rem;
 }
 .icones .icone{
@@ -64,7 +67,7 @@ header .icon-profile{
   padding: 20px;
   width: 100%;;
   text-decoration: none;
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 .icones .icone i {
   margin-right: 8px;
@@ -175,6 +178,12 @@ main {
 /* Fim da main */
 
 /* container */
+.new-requirement h1{
+  font-size: 2rem;
+  color: #393b3b;
+  margin-top: 90px;
+  font-family: 'DM Sans', sans-serif;
+}
 .container:not(.displayNone) {
   display: flex;
   flex-direction: column;
@@ -182,39 +191,37 @@ main {
 }
 .container:not(.displayNone) .lista {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: grid;
+  margin: 60px 0;
   grid-template-columns: repeat(4, minmax(160px, 1fr));;
-  justify-content: space-around;
-  width: 100%;
 }
 
 .container:not(.displayNone) .lista li {
-
-  flex-basis: 160px;
-  margin-bottom: 30px;
+  margin: 0 50px;
+  margin-bottom: 90px;
 }
 .container:not(.displayNone) .lista a {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+  transition: transform .5s ease-in-out;
+}
+.container:not(.displayNone) .lista span{
+  text-align: center;
+  color: rgb(56, 54, 54);
+  font-family: 'DM Sans', sans-serif;
+  
 }
 .lista li img {
-  width: 150px;
+  width: 130px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
+.container:not(.displayNone) .lista a:hover{
+  transform: scale(1.2);
+}
+
 /* Fim container */
 
-
-@media screen and (max-width:320px){
-  main {
-    margin-left: 0;
-  }
-
-  .container:not(.displayNone) .lista {
-    grid-template-columns: repeat(1, minmax(160px, 1fr));;
-  }
-}
