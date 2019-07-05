@@ -224,4 +224,8 @@ main {
 }
 
 /* Fim container */
-
+@media (min-width: 1800px) {
+  body{
+    overflow: hidden;
+  }
+}
