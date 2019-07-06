@@ -28,13 +28,13 @@ body{
 }
 .form-profile{
   background-color: #fff;
-  width: 400px;
+  width: 350px;
   height: 550px;
   border-radius: 10px;
 }
 .color{
   background-color: rgb(43, 43, 56);
-  width: 400px;
+  width: 350px;
   height: 240px;
   border-radius: 10px 10px 10px 10px;
   display: flex;
