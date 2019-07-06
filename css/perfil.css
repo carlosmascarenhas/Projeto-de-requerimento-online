@@ -1,74 +1,99 @@
-	
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
-	margin:0;
-	padding:0;
-	background-image:linear-gradient(125deg,#16a895,#0c7544,#1d6862,#12a07c);
-	background-size:400%;
-	animation: intro 15s infinite ;
-  background-repeat:no-repeat;
-
-  
-
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
+  overflow: hidden;
+}
+.logo {
+  margin: auto 20px;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  transform: translate3d(0, 1000px, 0);
+  animation: arrive 500ms ease-in-out 0.4s forwards;
+}
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; opacity: 0;
+  transform: translate3d(0, 500px, 0);
+  animation: arrive 500ms ease-in-out 0.4s forwards;
+  box-shadow: 8px 4px 14px -6px rgba(27, 63, 34, 0.952);
+}
+.form-profile{
+  background-color: #fff;
+  width: 400px;
+  height: 550px;
+  border-radius: 10px;
+}
+.color{
+  background-color: rgb(43, 43, 56);
+  width: 400px;
+  height: 240px;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-@keyframes intro {
-
-	0%{
-		background-position:0% 50%
-	}
-
-
-	50%{
-		background-position:100% 0%
-	}
-
-
-	100%{
-		background-position:0% 50%
-	}
+.icon-perfil{
+  background-color: rgb(218, 218, 218);
+  width: 140px;
+  height: 140px;
+  border-radius: 68px;
+  margin-top: 210px;
+ 
 }
-
-
-.text 
-{
-  width:150px;
-  height:150px;
-  background:#efedeb87;
-  border-radius:100%;
-  margin:10% auto;
-  margin-bottom:20px;
-  border:5px solid #efedeb26;
+.nome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.text span 
-{
-  
-  font-size:140px;
-  font-family:sans-serif;
-	text-transform:uppercase;
-  padding:30px;
-  color:#b541b794;
-  
+.nome h3{
+  margin-top: 85px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.4rem
 }
-
-h1
-{
-  font-family:sans-serif;
-  text-align:center;
-  font-size:21px;
-  color:#fff;
-  margin-top:0;
-  
+.infos{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  margin-left: 30px
 }
+.icon{
+  margin: 10px;
+  font-size: 1.2rem;
+}
+.icon.pen{
+  color: #1948a0;
+}
+.icon.calendar{
+  color: #751919;
+}
+.icon.ra{
+  color: #11682b;
+}
+.text{
+  color: #35373b;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  margin-left: 10px;
+ 
+}
+@keyframes arrive {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
 
-a
-{
-    font-size:12px;
-  font-family:sans-serif;
-	text-transform:uppercase;
-  color:#fff;
-  margin-bottom:5px;
-  text-align:center;
-  text-decoration:none;
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
