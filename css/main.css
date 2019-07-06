@@ -27,7 +27,7 @@ body{
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(52, 196, 88);
-    border-radius:0 5px 5px 0; 
+    border-radius:0 10px 10px 0; 
 }
 .titulo h1{
     position: relative;
