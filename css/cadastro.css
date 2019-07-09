@@ -138,3 +138,15 @@ input:focus {
     overflow: hidden;
   }
 }
+/*custonomização scroll*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background: #c5c5c5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #858585;
+  border-radius: 7.5px;
+}
+/*fim scroll*/
