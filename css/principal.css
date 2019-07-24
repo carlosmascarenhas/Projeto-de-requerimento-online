@@ -231,11 +231,18 @@ main {
 /*término new-requeriment*/
 
 /*inicio documents-requeriments*/
+.document-req a:hover{
+  transform: scale(1.2);
+}
 .document-req{
   width: 150px;
   height: 210px;
   background-color: #dadada;
   border-radius: 10px;
+  transition: transform .5s ease-in-out;
+}
+.document-req:hover{
+  transform:translateY(-10px);
 }
 .document-req .linha{
   width: 100%;
@@ -321,6 +328,9 @@ main {
   body{
     overflow: hidden;
   }
+  .document-req:hover{
+    transform:translateY(-30px);
+  }
   .new-requirement h1{
     font-size: 2rem;
     color: #424141;
@@ -350,6 +360,7 @@ main {
     height: 280px;
     background-color: #dadada;
     border-radius: 10px;
+    transition: transform .5s ease-in-out;
   }
   .document-req .linha{
     width: 100%;
