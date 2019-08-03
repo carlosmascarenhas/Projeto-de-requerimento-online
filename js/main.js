@@ -1,3 +1,4 @@
+/*função de troca dos formulários*/
 const troca = [...document.querySelectorAll('.botao')]
 
 troca.forEach(item => {
@@ -6,3 +7,4 @@ troca.forEach(item => {
 		this.parentElement.classList.add('is-active')
 	})
 })
+/*término da função*/
