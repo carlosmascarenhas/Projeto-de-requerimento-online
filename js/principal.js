@@ -29,7 +29,7 @@ document.querySelector('.icones').addEventListener('click', function(event){
     document.querySelector(`.${container_name}`).classList.remove('displayNone');
   }
 });
-
+/*função que chama o modal*/
 $("#detalhe_pedido").click(function(){
   document.getElementById("modal").innerHTML = `
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -72,7 +72,7 @@ $("#detalhe_pedido").click(function(){
       </div>
     </div>
   </div>`
-
+/**/
 })
 
 
