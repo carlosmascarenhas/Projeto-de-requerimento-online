@@ -216,7 +216,7 @@ main {
   align-items: center;
   text-decoration: none;
   transition: transform .5s ease-in-out;
-  cursor: pointer;
+  cursor: pointer
 }
 .container:not(.displayNone) .lista span{
   text-align: center;

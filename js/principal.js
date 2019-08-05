@@ -66,8 +66,8 @@ $("#detalhe_pedido").click(function(){
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary">Enviar</button>
+          <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-outline-success">Enviar</button>
         </div>
       </div>
     </div>
