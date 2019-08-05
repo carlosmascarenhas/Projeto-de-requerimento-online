@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Projeto de Requerimento Online</title>
-  <link rel="stylesheet" href="css/tela_do_aluno.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/4535967125.js"></script>
+  <link rel="stylesheet" href="css/tela_do_aluno.css">
 </head>
 
 <body>
   <header><!--estrutura do cabeçalho e dropdow de perfil-->
-    <h1 class="titulo">Requerimento Online</h1>
+     <h1 class="titulo">Requerimento Online</h1>
     <input type="search" class="busca_req" placeholder="Pesquise seu Requerimento">
     <div class="menu icon-profile">
       <button class="menu-button"><img src="http://i.pravatar.cc/50"><span class="title">Carlos Eduardo</span></button>
@@ -52,83 +53,84 @@
 
   <!--Estruturação do menu de navegação do usuário/estudante-->
   <main>
+    <div id="modal"></div>
     <div class="new-requirement container">
       <h1>Escolha o Motivo</h1>
       <ul class="lista">
         <li>
-          <a href="">
+          <a id="detalhe_pedido" data-toggle="modal" data-target="#exampleModal">
             <img src="./img/historico.png" alt="">
             <span>Histórico Escolar</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a>
             <img src="./img/exame.png" alt="">
             <span>Exame de Suficiência</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a>
             <img src="./img/enriquecimento_escolar.png" alt="">
             <span>Enriquecimento Escolar</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a>
             <img src="./img/declaracao.png" alt="">
             <span>Declaração</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a>
             <img src="./img/convalidacao.png" alt="">
             <span>Convalidação</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a>
             <img src="./img/certificado.png" alt="">
             <span>Certificado de Qualificação Profissional</span>
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a>
             <img src="./img/matricula.png" alt="">
             <span>Matricula em Unidade Curricular</span>
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a>
             <img src="./img/mudanca_de_turno.png" alt="">
             <span>Mudança de Turno</span>
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a>
             <img src="./img/mudanca_de_turma.png" alt="">
             <span>Mudança de Turma</span>
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a>
             <img src="./img/Segunda chamada.png" alt="">
             <span>Segunda Chamada</span>
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a>
             <img src="./img/cracha.png" alt="">
             <span>Segunda Via de Crachá</span>
           </a>
         </li>
 
         <li>
-          <a href="">
+          <a>
             <img src="./img/Outros.png" alt="">
             <span>Outros</span>
           </a>
@@ -241,6 +243,10 @@
   <!--Término da estruturação do menu-->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="js/principal.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 
 </body>
 
 </html>
