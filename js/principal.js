@@ -30,49 +30,35 @@ document.querySelector('.icones').addEventListener('click', function(event){
   }
 });
 /*função que chama o modal*/
-$("#detalhe_pedido").click(function(){
-  document.getElementById("modal").innerHTML = `
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Detalhamento do pedido</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="recipient-name" class="col-form-label">Curso:</label>
-              <input type="text" class="form-control" id="recipient-name" placeholder="Informe o seu curso">
-            </div>
-            <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Período:</label>
-            <input type="text" class="form-control" id="recipient-name" placeholder="Informe seu período">
-          </div>
-          <div class="form-group">
-          <label for="recipient-name" class="col-form-label">Turno:</label>
-          <input type="text" class="form-control" id="recipient-name" placeholder="Informe o seu turno">
-        </div>
-        <div class="form-group">
-        <label for="recipient-name" class="col-form-label">Turma:</label>
-        <input type="text" class="form-control" id="recipient-name" placeholder="Informe sua turma">
-      </div>
-            <div class="form-group">
-              <label for="message-text" class="col-form-label">Mensagem:</label>
-              <textarea class="form-control" id="message-text"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-outline-success">Enviar</button>
-        </div>
-      </div>
-    </div>
-  </div>`
+$("#detalhe_pedido").click(function teste2(){
+  document.getElementById("modal").innerHTML = swal("Write something here:", {
+    content: "input",
+  })
+  .then((value) => {
+    swal(`You typed: ${value}`);
+  });``
+  teste1();
 /**/
 })
+
+function teste1(){
+  swal({
+    text: "Write something here:",
+    content: el,
+    buttons: {
+      confirm: {
+        /*
+         * We need to initialize the value of the button to
+         * an empty string instead of "true":
+         */
+        value: DEFAULT_INPUT_TEXT,
+      },
+    },
+  })
+  .then((value) => {
+    swal(`You typed: ${value}`);
+  });
+/**/
+}
 
 
