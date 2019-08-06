@@ -30,35 +30,36 @@ document.querySelector('.icones').addEventListener('click', function(event){
   }
 });
 /*função que chama o modal*/
-$("#detalhe_pedido").click(function teste2(){
-  document.getElementById("modal").innerHTML = swal("Write something here:", {
-    content: "input",
-  })
-  .then((value) => {
-    swal(`You typed: ${value}`);
-  });``
-  teste1();
-/**/
-})
-
-function teste1(){
-  swal({
-    text: "Write something here:",
-    content: el,
-    buttons: {
-      confirm: {
-        /*
-         * We need to initialize the value of the button to
-         * an empty string instead of "true":
-         */
-        value: DEFAULT_INPUT_TEXT,
-      },
-    },
-  })
-  .then((value) => {
-    swal(`You typed: ${value}`);
-  });
-/**/
-}
+//$("#detalhe_pedido").click(function teste2(){
+  
+   $('.lista li').click(function(){
+        var id = $(this).attr('id');
+       // alert(id);
+     
+     document.getElementById("modal").innerHTML = Swal.mixin({
+  input: 'text',
+  confirmButtonText: 'Next &rarr;',
+  showCancelButton: true,
+  progressSteps: ['1', '2', '3']
+}).queue([
+  {
+    title: 'Question 1',
+    text: 'Chaining swal2 modals is easy'
+  },
+  'Question 2',
+  'Question 3'
+]).then((result) => {
+  if (result.value) {
+    Swal.fire({
+      title: 'All done!',
+      html:
+        'Your answers: <pre><code>' +
+          JSON.stringify(result.value) +
+        '</code></pre>',
+      confirmButtonText: 'Lovely!'
+    })
+  }
+})  
+});
 
 
