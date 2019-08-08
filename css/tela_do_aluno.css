@@ -350,7 +350,7 @@ main {
     list-style: none;
     padding: 0;
     display: grid;
-    margin: 170px 0;
+    margin: 150px 0;
     grid-template-columns: repeat(4, minmax(160px, 1fr));;
   }
   .new-requirement h1{
