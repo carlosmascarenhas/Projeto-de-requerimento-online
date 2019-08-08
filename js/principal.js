@@ -74,24 +74,41 @@ document.querySelector('.icones').addEventListener('click', function(event){
       'turma d': 'Turma D',
      },
   },
-])
-.then((result) => {
-  Swal.fire({
-    title: 'Vai enviar mesmo?',
+  {
+    title: 'Detalhe seu pedido',
+    input: 'textarea',
+    inputPlaceholder:'Digite aqui'
+  },
+  {
+    title: 'Deseja enviar?',
     type: 'warning',
     showCancelButton: true,
     confirmButtonColor:'#159952',
     cancelButtonColor:'#37393B',
-    confirmButtonText: 'Sim, vou enviar!',
-    cancelButtonText: 'Não, mudei de idéia!'
-  }).then((result) => {
-    if (result.value) {
-      Swal.fire(
-        'Sucesso',
-        'Seu requerimento foi enviado, aguarde análise.',
-        'success'
-      )
-    }
-  })
-});
+    confirmButtonText: 'Sim',
+    cancelButtonText: 'Não'
+  }
+])
+.then((result) => {
+  if (result.value) {
+    Swal.fire(
+      'Parabéns!',
+      'Seu requerimento foi enviado com sucesso!',
+      'success',
+    )
+  } else if (
+    // Read more about handling dismissals
+    result.dismiss === Swal.DismissReason.cancel
+  ) {
+    Swal.fire(
+      'Cancelado',
+      'Seu requerimento foi cancelado :)',
+      'error'
+    )
+  }
+})
  });
+
+ 
+
+  
