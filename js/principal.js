@@ -50,6 +50,7 @@ document.querySelector('.icones').addEventListener('click', function(event){
     inputOptions: {
       'matutino': 'Matutino',
       'vespertino': 'Vespertino',
+      'noturno': 'Noturno',
      },
   },
   {
