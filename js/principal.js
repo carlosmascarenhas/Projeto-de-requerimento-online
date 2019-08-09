@@ -81,7 +81,7 @@ document.querySelector('.icones').addEventListener('click', function(event){
     inputPlaceholder:'Digite aqui'
   },
   {
-    title: 'Deseja enviar?',
+    title: 'Deseja enviar o requerimento?',
     type: 'warning',
     showCancelButton: true,
     confirmButtonColor:'#159952',
@@ -93,7 +93,7 @@ document.querySelector('.icones').addEventListener('click', function(event){
 .then((result) => {
   if (result.value) {
     Swal.fire(
-      'Parabéns!',
+      'Sucesso!',
       'Seu requerimento foi enviado com sucesso!',
       'success',
     )
