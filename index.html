@@ -58,16 +58,24 @@
         </div>
     </section>  
     <section class="formulario-resp mobile">
-        <div class="titulo-mobile">
-            <h1>Requerimento online</h1>
-        </div>
-        <div class="icones">
-        <a>
-             <img src="./img/icon-aluno.png" alt="">
-         </a>
-         <a>
-            <img src="./img/icon-servidoor.png" alt="">
-        </a>
+        <div class="forms-mobile">
+            <button type="button" class="botao botao_aluno">ALUNO<span class="linha"></span></button>
+            <form class="form-mobile aluno-mobile">
+            <fieldset>
+                <legend>Por gentileza preencha todos os campos abaixo.</legend>
+                <div class="input_block">
+                    <div class="aluno-img"></div>
+                        <label for="RA">RA</label>
+                        <input id="RA" type="text" required>
+                    </div>
+
+                    <div class="input_block">
+                        <label for="senha">Senha</label>
+                         <input id="senha" type="password" required>
+                    </div>
+                    <button type="submit" class="btn-login-mobile">Login</button>
+                </fieldset>
+            </form>
         </div>
     </section>
 </body>

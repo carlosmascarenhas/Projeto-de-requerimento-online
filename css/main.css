@@ -405,31 +405,88 @@ a:link{
     }
     .formulario-resp{
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        height: 80vh;
-    }
-    .titulo-mobile h1{
-        display: flex;
-        align-items: center;
         justify-content: center;
-        border-radius: 20px;
-        width: 250px;
-        height: 110px;
-        font-size: 1.4rem;
-        font-family: 'Source Sans Pro', sans-serif;
-        color:#fff;
+        align-items: center;
+        height: 100vh;
     }
-    .icones{
+    
+    .forms{
         display: flex;
-        flex-direction: column;
-
+        align-items: flex-start;
+        margin-top:45px;
     }
-    .icones img{
-        width: 150px;
-        height: auto;
-        margin: 30px 0;
+    .form-mobile fieldset{
+        position: relative;
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: all .3s ease-out;
     }
+    .form-mobile{
+        background-color: #fff;
+        overflow: hidden;
+        min-width: 30vw;
+        max-height: 80vh;
+        margin-top: 50px;
+        padding: 30px 25px;
+        border-radius: 12px;
+        transform-origin: top;
+    }
+    .form-mobile legend{
+        position: absolute;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        clip: rect(0 0 0 0);
+    }
+    /*estilização das inputs*/
+    .input_block label{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18pxp;
+        position: relative;
+        top: 5px;
+        color:#2E7C2E;
+    }
+    
+    .input_block input{
+        display: block;
+        width: 100%;
+        margin: 1rem 0;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 16px;
+        line-height: 40px;
+        color: #3b4465;
+        background: rgba(214, 215, 216, 0.959);
+        border: 1px solid transparent;
+        border-radius: 8px;
+        outline: none;
+        font-family: 'Muli', sans-serif;
+    }
+    
+    /*fim da estilização*/
+    
+    .form-mobile [type='submit']{
+        display: block;
+        min-width: 140px;
+        margin:30px auto 10px;
+        font-size: 18px;
+        line-height: 40px;
+        border-radius: 19px;
+        border: none;
+    }
+    
+    .btn-login-mobile{
+        color: #fbfdff;
+        background: -webkit-linear-gradient(35deg, #00a99d, #009245);
+        cursor: pointer;
+        position: relative;
+        font-family: 'Roboto',sans-serif;
+    }
+   
+    /*estilização dos botões do formulário*/
+  
 
 }
