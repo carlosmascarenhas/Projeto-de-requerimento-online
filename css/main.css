@@ -422,7 +422,6 @@ a:link{
         margin: 0;
         padding: 0;
         border: 0;
-        transition: all .3s ease-out;
     }
     .form-mobile{
         background-color: #fff;
