@@ -367,7 +367,7 @@ body{
 
 .servidor-img {
     background-image: url('../img/icon-servidor.png');
-    width: 98px;
+    width: 93px;
     height: 130px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -416,6 +416,7 @@ a:link{
         margin: 0;
         padding: 0;
         border: 0;
+        
     }
     .form-mobile{
         background-color: #fff;
@@ -482,9 +483,19 @@ a:link{
     .no-active{
         display: none;
     }
-    
-   
-      
+    .botao-mobile{
+        position: relative;
+        cursor: pointer;
+        display: block;
+        padding: 0;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        letter-spacing: .5px;
+        color: rgb(24, 23, 23);
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
     /*estilização dos botões do formulário*/
   
 
