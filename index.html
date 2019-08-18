@@ -59,7 +59,8 @@
     </section>  
     <section class="formulario-resp mobile">
         <div class="forms-mobile">
-            <form class="form-mobile aluno-mobile">
+            <form class="form-mobile aluno-mobile ">
+                <button type="button" class="botao-mobile botao_servidor">SERVIDOR<span class="linha"></span></button>
             <fieldset>
                 <legend>Por gentileza preencha todos os campos abaixo.</legend>
                 <div class="input_block">
@@ -76,6 +77,26 @@
                 </fieldset>
             </form>
         </div>
+
+        <div class="forms-mobile">
+                <form class="form-mobile aluno-mobile  no-active">
+                <button type="button" class="botao-mobile botao_aluno">ALUNO<span class="linha"></span></button>
+                <fieldset>
+                    <legend>Por gentileza preencha todos os campos abaixo.</legend>
+                    <div class="input_block">
+                        <div class="servidor-img"></div>
+                            <label for="siape">Siape</label>
+                            <input id="siape" type="text" required>
+                        </div>
+    
+                        <div class="input_block">
+                            <label for="senha">Senha</label>
+                             <input id="senha" type="password" required>
+                        </div>
+                        <button type="submit" class="btn-login-mobile">Login</button>
+                    </fieldset>
+                </form>
+            </div>
     </section>
 </body>
 <script src="js/plugins.js"></script>

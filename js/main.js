@@ -7,4 +7,18 @@ troca.forEach(item => {
 		this.parentElement.classList.add('is-active')
 	})
 })
-/*término da função*/
+
+
+const passa = [...document.querySelectorAll('.botao-mobile')]
+
+passa.forEach(item => {
+	item.addEventListener('click', function() {
+		passa.forEach(item => item.parentElement.classList.remove('no-active'))
+		this.parentElement.classList.add('no-active')
+	})
+})
+
+
+
+
+

@@ -410,12 +410,6 @@ a:link{
         align-items: center;
         height: 100vh;
     }
-    
-    .forms{
-        display: flex;
-        align-items: flex-start;
-        margin-top:45px;
-    }
     .form-mobile fieldset{
         position: relative;
         opacity: 1;
@@ -433,6 +427,7 @@ a:link{
         border-radius: 12px;
         transform-origin: top;
     }
+
     .form-mobile legend{
         position: absolute;
         overflow: hidden;
@@ -484,7 +479,12 @@ a:link{
         position: relative;
         font-family: 'Roboto',sans-serif;
     }
+    .no-active{
+        display: none;
+    }
+    
    
+      
     /*estilização dos botões do formulário*/
   
 
