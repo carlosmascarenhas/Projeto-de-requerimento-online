@@ -488,6 +488,8 @@ a:link{
     }
     .botao-mobile{
         position: relative;
+        top: -15px;
+        left: -15px;
         cursor: pointer;
         display: block;
         padding: 0;
@@ -502,6 +504,34 @@ a:link{
     .icon-troca{
         width: 48px;
         height: auto;
+    }
+    .aluno-img {
+        background-image: url('../img/icon-estudante.png');
+        width: 93px;
+        height: 130px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 5.2rem;
+    }
+    
+    .servidor-img {
+        background-image: url('../img/icon-servidor.png');
+        width: 98px;
+        height: 130px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 5.2rem;
+    }
+    .titulo-aluno{
+        margin: 0;
+        padding: 0;
+        float: right;
+        position: absolute;
+        top: -55px;
+        left: 50px;
+        font-size: 1.3rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #0b6133;
     }
     /*estilização dos botões do formulário*/
   
