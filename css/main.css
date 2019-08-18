@@ -425,7 +425,7 @@ a:link{
         background-color: #fff;
         overflow: hidden;
         min-width: 30vw;
-        max-height: 80vh;
+        max-height: 90vh;
         margin-top: 50px;
         padding: 30px 25px;
         border-radius: 12px;
@@ -498,6 +498,10 @@ a:link{
         background-color: transparent;
         border: none;
         outline: none;
+    }
+    .icon-troca{
+        width: 48px;
+        height: auto;
     }
     /*estilização dos botões do formulário*/
   
