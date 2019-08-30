@@ -336,7 +336,7 @@ main {
   border-radius: 7.5px;
 }
 /*fim scroll*/
-.swal2-title,.swal2-select,.swal2-confirm,#swal2-content,.swal2-cancel,.swal2-progress-step{
+.swal2-title,.swal2-select,.swal2-confirm,#swal2-content,.swal2-cancel,.swal2-progress-step,.swal2-validation-message{
   font-family: 'DM Sans', sans-serif;
 }
 .swal2-textarea{

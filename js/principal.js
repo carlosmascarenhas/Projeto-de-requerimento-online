@@ -52,6 +52,11 @@ document.querySelector('.icones').addEventListener('click', function(event){
       'vespertino': 'Vespertino',
       'noturno': 'Noturno',
      },
+     inputValidator: (value) => {
+      if (!value) {
+        return 'Informe seu turno para continuar!'
+      }
+    },
   },
   {
     title: 'Informe seu período',
@@ -64,6 +69,11 @@ document.querySelector('.icones').addEventListener('click', function(event){
       '5° semestre': '5° Semestre',
       '6° semestre': '6° Semestre',
      },
+     inputValidator: (value) => {
+      if (!value) {
+        return 'Informe seu período para continuar!'
+      }
+    },
   },
   {
     title: 'Informe sua turma',
@@ -74,11 +84,25 @@ document.querySelector('.icones').addEventListener('click', function(event){
       'turma c': 'Turma C',
       'turma d': 'Turma D',
      },
+     inputValidator: (value) => {
+      if (!value) {
+        return 'Informe sua turma para continuar!'
+      }
+    },
   },
   {
     title: 'Detalhe seu pedido',
     input: 'textarea',
-    inputPlaceholder:'Digite aqui'
+    inputPlaceholder:'Digite aqui (Opcional)'
+  },
+  {
+    title: 'Escolha seu arquivo',
+    input: 'file',
+    inputAttributes: {
+      accept: '/*',
+    'aria-label': 'Upload your profile picture',
+      
+    }
   },
   {
     title: 'Deseja enviar o requerimento?',
