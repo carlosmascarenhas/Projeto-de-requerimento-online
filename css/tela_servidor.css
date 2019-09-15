@@ -226,12 +226,12 @@ main {
     background-color: #f3f3f3;
   }
   .container:not(.displayNone)  .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid rgb(55, 57, 59);
+    border-bottom: 2px solid #159952;
   }
   
   .container:not(.displayNone)  .content-table tbody tr.active-row {
     font-weight: bold;
-    color: rgb(55, 57, 59);
+    color: #159952;
   }
 /*término caixa_entrada*/
 
