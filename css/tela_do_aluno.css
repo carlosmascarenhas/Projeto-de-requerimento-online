@@ -82,6 +82,10 @@ a.active{
   transition: transform 0.5s 0s ease-in-out;
   transform: translateY(4px);
 }
+.icones  .active{
+  color: #ffffff;
+  
+}
 /*término menu deslizantes*/
 
 /*inicio dropdown de perfil*/
