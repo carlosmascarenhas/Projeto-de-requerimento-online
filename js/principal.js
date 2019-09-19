@@ -39,11 +39,23 @@ document.querySelector('.icones').addEventListener('click', function(event){
   document.getElementById("modal").innerHTML = Swal.mixin({
   inputPlaceholder: 'Escolha a opção',
   confirmButtonText: 'Próximo',
-  cancelButtonText: 'Cancelar',
   confirmButtonColor:'#159952',
-  showCancelButton: true,
-  cancelButtonColor:'#37393B',
+  allowOutsideClick: false,
+  showCloseButton: true,
 }).queue([
+  {
+    title: 'Informe o seu curso',
+    input: 'select',
+    inputOptions: {
+      'técnico em informática para internet': 'Técnico em Informática Para Internet',
+      'jogos digitais': 'Jogos Digitais',
+     },
+     inputValidator: (value) => {
+      if (!value) {
+        return 'Informe seu curso para continuar!'
+      }
+    },
+  },
   {
     title: 'Informe seu turno',
     input: 'select',
@@ -93,7 +105,12 @@ document.querySelector('.icones').addEventListener('click', function(event){
   {
     title: 'Detalhe seu pedido',
     input: 'textarea',
-    inputPlaceholder:'Digite aqui (Opcional)'
+    inputPlaceholder:'Digite aqui',
+    inputValidator: (value) => {
+      if (!value) {
+        return 'Por favor descreva seu pedido para continuar'
+      }
+    },
   },
   {
     title: 'Escolha seu arquivo',
