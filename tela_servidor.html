@@ -12,7 +12,6 @@
 <body>
   <header><!--estrutura do cabeçalho e dropdow de perfil-->
      <h1 class="titulo">Requerimento Online</h1>
-    <input type="search" class="busca_req" placeholder= "Pesquise seu Requerimento">
     <div class="menu icon-profile">
       <button class="menu-button"><img src="http://i.pravatar.cc/50"><span class="title">Sergio Ricardo</span></button>
       <div class="menu-dropdown hidden">
@@ -37,17 +36,23 @@
       </a>
       <a class="icone" data-container="deferred-requirements">
         <i class="far fa-check-circle fa-lg"></i>
-        Requerimentos Deferidos
+        Deferidos da Semana
       </a>
       <a class="icone" data-container="rejected-requirements">
         <i class="far fa-times-circle fa-lg"></i>
-        Requerimentos Indeferidos
+        Indeferidos da Semana
+      </a>
+      <a class="icone" data-container="all-requirements">
+        <i class="fas fa-archive fa-lg"></i>
+        Todos os Requerimentos
       </a>
     </div>
   </nav>
   <!--Término de estruturação do menu deslizante-->
 
-  <!--Estruturação do menu de navegação do usuário/estudante-->
+  <!--Estruturação do menu de navegação do servidor-->
+
+  <!--Estruturação da tabela de caixa de entrada-->
   <main>
     <div class="caixa_entrada container">
        <table class="content-table">
@@ -60,30 +65,31 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="checkbox">Carlos Eduardo Mascarenhas Oliveira</td>
+                    <td>Carlos Eduardo Mascarenhas Oliveira</td>
                     <td>Mudança de turno</td>
                     <td>19 de ago</td>
                 </tr>
                 <tr class="active-row">
-                    <td><input type="checkbox">Felipe Souza</td>
+                    <td>Felipe Souza</td>
                     <td>Mudança de turma</td>
                     <td>20 de ago</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox">Luiz Seibel</td>
+                    <td>Luiz Seibel</td>
                     <td>Outros</td>
                     <td>15 de nov</td>
                 </tr>
                 <tr class="active-row">
-                    <td><input type="checkbox">Sergio Ricardo</td>
+                    <td>Sergio Ricardo</td>
                     <td>Segunda via de crachá</td>
                     <td>20 de out</td>
                 </tr>
             </tbody>
        </table>
     </div>
+<!--Término da tabela-->
 
-
+<!--Estruturação dos requerimentos-->
     <div class="deferred-requirements container displayNone">
       <ul class="documentos">
         <li>
@@ -149,38 +155,50 @@
     </ul>
   </div>
 
-  <div class="pending-requirements container displayNone">
-  <ul class="documentos">
-    <li>
-      <a href="#">
-        <div class="document-req">
-          <div class="linha-pen"></div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <div class="document-req">
-            <div class="linha-pen"></div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <div class="document-req">
-            <div class="linha-pen"></div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <div class="document-req">
-            <div class="linha-pen"></div>
-        </div>
-      </a>
-      </li>
-     </ul>
+  <div class="all-requirements container displayNone">
+    <div class="grupo-busca">
+      <div class="busca">
+        <input type="search" class="busca-requerimento" placeholder= "Buscar Requerimento">
+      </div>
+      <div class="filtro">
+        <div class="filter">Filtro<i class="fas fa-arrow-down"></i></div>
+      </div>
     </div>
+    <div class="requirements">
+      <table class="content-table">
+           <thead>
+               <tr>
+                   <th>Aluno</th>
+                   <th>Motivo</th>
+                   <th>Data</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>Carlos Eduardo Mascarenhas Oliveira</td>
+                   <td>Mudança de turno</td>
+                   <td>19 de ago</td>
+               </tr>
+               <tr class="active-row">
+                   <td>Felipe Souza</td>
+                   <td>Mudança de turma</td>
+                   <td>20 de ago</td>
+               </tr>
+               <tr>
+                   <td>Luiz Seibel</td>
+                   <td>Outros</td>
+                   <td>15 de nov</td>
+               </tr>
+               <tr class="active-row">
+                   <td>Sergio Ricardo</td>
+                   <td>Segunda via de crachá</td>
+                   <td>20 de out</td>
+               </tr>
+           </tbody>
+      </table>
+   </div>
+    </div>
+    
   </main>
   <!--Término da estruturação do menu-->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

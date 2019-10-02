@@ -7,7 +7,7 @@ body{
   padding: 0;
 
 }
-*{
+* {
   box-sizing: border-box;
 }
 /*inicio da custonomização do cabeçalho*/
@@ -317,6 +317,39 @@ main {
   text-align: center;
   color: rgb(56, 54, 54);
   font-family: 'DM Sans', sans-serif;
+}
+.container:not(.displayNone) .grupo-busca{
+  display: flex;
+  flex-direction: row;
+  margin: 100px 0;
+}
+.container:not(.displayNone) .busca-requerimento{
+  background-color: #e4e4e4;
+  width: 600px;
+  height: 50px;
+  border-radius:4px 0 0 4px;
+  outline: 0;
+  border: none;
+  font-family: 'Source Sans Pro',sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.container:not(.displayNone) .filter{
+  background-color: #e4e4e4;
+  width: 110px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #8f8f8f;
+  border: none;
+  outline: none;
+  overflow: none;
 }
 /*término document-requeriments*/
 
