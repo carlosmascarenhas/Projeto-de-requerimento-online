@@ -28,19 +28,6 @@ header .titulo{
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
 }
-header .busca_req{
-  height: 38px;
-  border-radius: 4px;
-  outline: 0;
-  border: 0;
-  font-size: 0.8rem;
-  font-family: 'Source Sans Pro',sans-serif;
-  padding-left: 20px;
-  display: flex;
-  flex: 0.5;
-  flex-grow: 0.4;
-  margin: 0 28px;
-}
 
 header .icon-profile{
   margin-right: 15px;

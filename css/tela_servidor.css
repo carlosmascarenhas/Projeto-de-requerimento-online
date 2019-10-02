@@ -29,19 +29,6 @@ header .titulo{
   color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
 }
-header .busca_req{
-  height: 38px;
-  border-radius: 4px;
-  outline: 0;
-  border: 0;
-  font-size: 0.8rem;
-  font-family: 'Source Sans Pro',sans-serif;
-  padding-left: 20px;
-  display: flex;
-  flex: 0.5;
-  flex-grow: 0.4;
-  margin: 0 28px;
-}
 
 header .icon-profile{
   margin-right: 15px;
@@ -194,9 +181,9 @@ main {
 
 /* container */
 
-/* inicio-caixa_entrada*/
+/* Custonomização da tabela da caixa de entrada*/
 
-.container:not(.displayNone) .content-table{
+.container:not(.displayNone) .table-box{
     border-collapse: collapse;
     margin: 90px 0;
     font-size: 0.9em;
@@ -206,7 +193,7 @@ main {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.container:not(.displayNone) .content-table thead tr{
+.container:not(.displayNone) .table-box thead tr{
    background-color: rgb(55, 57, 59);
    color: #ffffff;
    text-align: left;
@@ -214,26 +201,61 @@ main {
    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.container:not(.displayNone) .content-table th, .content-table td{
+.container:not(.displayNone) .table-box th, .table-box td{
     padding: 12px 15px;
     font-family: 'Source Sans Pro', sans-serif;
  }
- .container:not(.displayNone) .content-table tbody tr{
+ .container:not(.displayNone) .table-box tbody tr{
     border-bottom: 1px solid #dddddd;
     cursor: pointer;
  }
- .container:not(.displayNone) .content-table tbody tr:nth-of-type(even) {
+ .container:not(.displayNone) .table-box tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
   }
-  .container:not(.displayNone)  .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #159952;
+  .container:not(.displayNone)  .table-box tbody tr:last-of-type {
+    border-bottom: 2px solid #bbbbbb;
   }
   
-  .container:not(.displayNone)  .content-table tbody tr.active-row {
+  .container:not(.displayNone)  .table-box tbody tr.active-row {
     font-weight: bold;
-    color: #159952;
+    color: #21687e;
   }
-/*término caixa_entrada*/
+/*término de custonomização da tabela de caixa_entrada*/
+
+/*Custonomização da tabela de todos os requerimentos*/
+  .container:not(.displayNone) .table-all-requirements{
+    border-collapse: collapse;
+    margin: 5px 0;
+    font-size: 0.9em;
+    min-width: 70vw;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .container:not(.displayNone) .table-all-requirements thead tr{
+  background-color: rgb(55, 57, 59);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .container:not(.displayNone) .table-all-requirements th, .table-all-requirements td{
+    padding: 12px 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .container:not(.displayNone) .table-all-requirements tbody tr{
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+  }
+  .container:not(.displayNone) .table-all-requirements tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  .container:not(.displayNone)  .table-all-requirements tbody tr:last-of-type {
+    border-bottom: 2px solid #bbbbbb;
+  }
+/*Término da custonomização da tabela de todos os requerimentos*/
 
 /*inicio documents-requeriments*/
 .document-req a:hover{
@@ -318,22 +340,28 @@ main {
   color: rgb(56, 54, 54);
   font-family: 'DM Sans', sans-serif;
 }
+/*Término de custonomização dos documentos/requerimentos*/
+
+/*Custonomização Da input de busca e filtro*/
 .container:not(.displayNone) .grupo-busca{
   display: flex;
   flex-direction: row;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 .container:not(.displayNone) .busca-requerimento{
   background-color: #e4e4e4;
-  width: 600px;
+  min-width: 62vw;
   height: 50px;
   border-radius:4px 0 0 4px;
   outline: 0;
   border: none;
   font-family: 'Source Sans Pro',sans-serif;
   padding: 10px;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Source Sans Pro', sans-serif;
+  padding-left: 20px;
+  color: #6f7172;
 }
 .container:not(.displayNone) .filter{
   background-color: #e4e4e4;
@@ -344,14 +372,30 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Source Sans Pro', sans-serif;
   color: #8f8f8f;
   border: none;
   outline: none;
   overflow: none;
+  cursor: pointer;
 }
-/*término document-requeriments*/
+.filter::before{
+  content: "";
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    height:37px;
+    width: 1px;
+    background-color: rgba(51,51,51,.1);
+}
+.container:not(.displayNone) .filter .text-filtro{
+  margin: 0 10px;
+}
+.container:not(.displayNone) .filter i{
+  margin-top: 3px;
+}
+/*término custonomização do filtro*/
 
 /* Fim container */
 

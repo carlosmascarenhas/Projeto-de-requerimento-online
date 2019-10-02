@@ -114,12 +114,7 @@ document.querySelector('.icones').addEventListener('click', function(event){
   },
   {
     title: 'Escolha seu arquivo',
-    input: 'file',
-    inputAttributes: {
-      accept: '/*',
-    'aria-label': 'Upload your profile picture',
-      
-    }
+    html: '<input id="fileupload" type="file" name="files[]" multiple>'
   },
   {
     title: 'Deseja enviar o requerimento?',
@@ -133,24 +128,27 @@ document.querySelector('.icones').addEventListener('click', function(event){
 ])
 .then((result) => {
   if (result.value) {
-    Swal.fire(
-      'Sucesso!',
-      'Seu requerimento foi enviado com sucesso!',
-      'success',
-    )
-  } else if (
-    // Read more about handling dismissals
-    result.dismiss === Swal.DismissReason.cancel
-  ) {
-    Swal.fire(
+    const requerimento = result.value;
+    alert(requerimento);
+    const enviar = {requerimento};
+    alert(enviar);
+    $.post("/alunos/enviar", enviar, function(res){
+        Swal.fire(
+        'Sucesso!',
+        'Seu requerimento foi enviado com sucesso!',
+        'success',
+        )
+    })
+  }
+  else {
+        Swal.fire(
       'Cancelado',
       'Seu requerimento foi cancelado :)',
       'error'
     )
-  }
+      }
 })
  });
-
  
 
   
