@@ -31,12 +31,23 @@ document.querySelector('.icones').addEventListener('click', function(event){
 });
 /*função que chama o modal*/
 //$("#detalhe_pedido").click(function teste2(){
-  
-   $('.lista li').click(function(){
-        var id = $(this).attr('id');
-       // alert(id);
-     
-  document.getElementById("modal").innerHTML = Swal.mixin({
+  const readUploadedFile = (inputFile) => {
+    const reader = new FileReader();
+
+    return new Promise((resolve, reject) => {
+        reader.onerror = () => {
+            reader.abort();
+            reject(new DOMException("Problem parsing input file."));
+        };
+
+        reader.onload = () => {
+            resolve(reader.result);
+        };
+        reader.readAsBinaryString(inputFile);
+    });
+};
+$('.lista li').click(function(){
+Swal.mixin({
   inputPlaceholder: 'Escolha a opção',
   confirmButtonText: 'Próximo',
   confirmButtonColor:'#159952',
@@ -113,8 +124,21 @@ document.querySelector('.icones').addEventListener('click', function(event){
     },
   },
   {
-    title: 'Escolha seu arquivo',
-    html: '<input id="fileupload" type="file" name="files[]" multiple>'
+    title: 'Select image',
+            input: 'file',
+            inputAttributes: {
+                'accept': 'image/*',
+                'aria-label': 'Upload your profile picture'
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Upload',
+            showLoaderOnConfirm: true,
+            preConfirm: async (file) => {
+                if (file) {
+                    return await readUploadedFile(file)
+                }
+            },
+            allowOutsideClick: () => !swal.isLoading()
   },
   {
     title: 'Deseja enviar o requerimento?',
@@ -149,6 +173,3 @@ document.querySelector('.icones').addEventListener('click', function(event){
       }
 })
  });
- 
-
-  
