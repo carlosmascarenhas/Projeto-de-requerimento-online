@@ -12,9 +12,11 @@
     <div class="titulo">
         <h1>REQUERIMENTO ONLINE</h1>
     </div>
-    <section class="formulario desktop"> <!--criação dos formulários-->
+    <section class="formulario desktop">
+        <!--criação dos formulários-->
         <div class="forms">
-            <div class="form-login is-active"><!--inicio formulário aluno-->
+            <div class="form-login is-active">
+                <!--inicio formulário aluno-->
                 <button type="button" class="botao botao-aluno">ALUNO<span class="linha"></span></button>
                 <form class="form aluno-login">
                     <fieldset>
@@ -36,8 +38,10 @@
                     </fieldset>
                     <button type="submit" class="btn-login-aluno">Login</button>
                 </form>
-            </div> <!--término do formulário aluno-->
-            <div class="form-login"> <!--inicio do formulário servidor-->
+            </div>
+            <!--término do formulário aluno-->
+            <div class="form-login">
+                <!--inicio do formulário servidor-->
                 <button type="button" class="botao botao-servidor">SERVIDOR<span class="linha"></span></button>
                 <form class="form servidor-login">
                     <fieldset>
@@ -54,27 +58,28 @@
                     </fieldset>
                     <button type="submit" class="btn-login-servidor">Login</button>
                 </form>
-            </div><!--término do formulário servidor-->
+            </div>
+            <!--término do formulário servidor-->
         </div>
-    </section>  
+    </section>
     <section class="formulario-resp mobile">
         <div class="forms-mobile">
             <form class="form-mobile aluno-mobile ">
                 <button type="button" class="botao-mobile botao_servidor">
                     <img class="icon-troca" src="../Projeto-de-requerimento-online/img/troca.png" alt="icon-aluno">
                 </button>
-            <fieldset>
-                 <h1 class="titulo-aluno">Aluno</h1>
-                <legend>Por gentileza preencha todos os campos abaixo.</legend>
-                <div class="input_block">
-                    <div class="aluno-img"></div>
+                <fieldset>
+                    <h1 class="titulo-aluno">Aluno</h1>
+                    <legend>Por gentileza preencha todos os campos abaixo.</legend>
+                    <div class="input_block">
+                        <div class="aluno-img"></div>
                         <label for="RA">RA</label>
                         <input id="RA" type="text" required>
                     </div>
 
                     <div class="input_block">
                         <label for="senha">Senha</label>
-                         <input id="senha" type="password" required>
+                        <input id="senha" type="password" required>
                     </div>
                     <button type="submit" class="btn-login-mobile">Login</button>
                 </fieldset>
@@ -82,7 +87,7 @@
         </div>
 
         <div class="forms-mobile">
-                <form class="form-mobile servidor-mobile  no-active">
+            <form class="form-mobile servidor-mobile  no-active">
                 <button type="button" class="botao-mobile botao_aluno">
                     <img class="icon-troca" src="../Projeto-de-requerimento-online/img/troca.png" alt="icon-servidor">
                 </button>
@@ -91,20 +96,21 @@
                     <legend>Por gentileza preencha todos os campos abaixo.</legend>
                     <div class="input_block">
                         <div class="servidor-img"></div>
-                            <label for="siape">Siape</label>
-                            <input id="siape" type="text" required>
-                        </div>
-    
-                        <div class="input_block">
-                            <label for="senha">Senha</label>
-                             <input id="senha" type="password" required>
-                        </div>
-                        <button type="submit" class="btn-login-mobile">Login</button>
-                    </fieldset>
-                </form>
-            </div>
+                        <label for="siape">Siape</label>
+                        <input id="siape" type="text" required>
+                    </div>
+
+                    <div class="input_block">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" required>
+                    </div>
+                    <button type="submit" class="btn-login-mobile">Login</button>
+                </fieldset>
+            </form>
+        </div>
     </section>
 </body>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+
 </html>
