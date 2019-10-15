@@ -5,6 +5,7 @@
 body{
   margin:0;
   padding: 0;
+  height: 150vh;
 
 }
 * {
@@ -216,10 +217,6 @@ main {
     border-bottom: 2px solid #bbbbbb;
   }
   
-  .container:not(.displayNone)  .table-box tbody tr.active-row {
-    font-weight: bold;
-    color: #21687e;
-  }
 /*término de custonomização da tabela de caixa_entrada*/
 
 /*Custonomização da tabela de todos os requerimentos*/
