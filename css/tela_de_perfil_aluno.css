@@ -81,3 +81,27 @@ body{
     transform: translate3d(0, 0, 0);
   }
 }
+@media (max-width: 330px){
+  .form-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 301px;
+    height: 300px;
+    border-radius: 10px;
+  }
+}
+@media (min-width:330px) and (max-width: 768.98px) {
+  .form-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+  }
+}

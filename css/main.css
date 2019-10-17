@@ -164,7 +164,7 @@ body{
 .form{
     overflow: hidden;
     min-width: 330px;
-    max-height: 460px;
+    max-height: 480px;
     margin-top: 50px;
     padding: 30px 25px;
     border-radius: 12px;
