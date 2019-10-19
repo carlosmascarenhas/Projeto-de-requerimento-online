@@ -48,7 +48,7 @@ header .icon-profile{
   width: 270px;
   position: fixed;
 }
-.nav{
+.nave{
   display: none;
 }
 .icones{
@@ -379,7 +379,7 @@ main {
   .menu-des-pc{
     display: none;
   }
-  .nav{
+  .nave{
     display:block;
     background-color:rgb(55, 57, 59);
     height:100vh;
@@ -556,7 +556,7 @@ main {
   .menu-des-pc{
     display: none;
   }
-  .nav{
+  .nave{
     display:block;
     background-color:rgb(55, 57, 59);
     height:100vh;
@@ -669,7 +669,7 @@ main {
   .menu-des-pc{
     display: none;
   }
-  .nav{
+  .nave{
     display:block;
     background-color:rgb(55, 57, 59);
     height:100vh;

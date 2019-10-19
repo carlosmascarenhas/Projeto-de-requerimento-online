@@ -30,7 +30,7 @@ document.querySelector('.icones').addEventListener('click', function (event) {
   }
 });
 $(document).ready(function() {
-  $('.nav').slideAndSwipe();
+  $('.nave').slideAndSwipe();
 });
 // modal que receberá as informações do usuário
 $('.lista li').click(function () {
