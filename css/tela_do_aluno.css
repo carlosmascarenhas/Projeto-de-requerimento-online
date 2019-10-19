@@ -390,7 +390,7 @@ main {
     position: fixed;
     overflow-y: auto;
     overflow-x: visible;
-    transform: translate(-280px,0);
+    transform: translate(-180px,0);
   }
   .ssm-overlay {
     position: fixed;
@@ -567,7 +567,7 @@ main {
     position: fixed;
     overflow-y: auto;
     overflow-x: visible;
-    transform: translate(-280px,0);
+    transform: translate(-90px,0);
   }
   .ssm-overlay {
     position: fixed;
@@ -680,7 +680,7 @@ main {
     position: fixed;
     overflow-y: auto;
     overflow-x: visible;
-    transform: translate(-280px,0);
+    transform: translate(-180px,0);
   }
   .ssm-overlay {
     position: fixed;
