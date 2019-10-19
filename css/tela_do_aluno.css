@@ -238,12 +238,6 @@ main {
 .document-req a:hover{
   transform: scale(1.2);
 }
-.container:not(.displayNone) .documentos{
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));;
-}
 .document-req{
   width: 150px;
   height: 210px;
@@ -445,6 +439,21 @@ main {
     margin: 20px 0;
     font-size:0.8rem;
   }
+  .container:not(.displayNone) .documentos{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 1fr));;
+    margin: 90px 0;
+  }
+  .document-req{
+    width: 150px;
+    height: auto;
+    background-color: #dadada;
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+    margin: 0px 0;
+  }
 }
 /* Responsividade para telas medianas */
 @media (min-width:330px) and (max-width: 768.98px) {
@@ -561,6 +570,21 @@ main {
     background-color: rgba(0,0,0,0.2);
     display: none;
     z-index: 1;
+  }
+  .container:not(.displayNone) .documentos{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));;
+    margin: 90px 0;
+  }
+  .document-req{
+    width: 150px;
+    height: auto;
+    background-color: #dadada;
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+    margin: 0px 0;
   }
 
 }
@@ -682,6 +706,21 @@ main {
     background-color: #ffffff;
     padding: 15px;
     margin-top: 0px;
+  }
+  .container:not(.displayNone) .documentos{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(160px, 1fr));;
+    margin: 90px 0;
+  }
+  .document-req{
+    width: 150px;
+    height: auto;
+    background-color: #dadada;
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+    margin: 0px 0;
   }
 }
 
