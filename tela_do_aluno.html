@@ -12,6 +12,9 @@
 <body>
   <header>
     <!--estrutura do cabeçalho e dropdow de perfil-->
+    <a href="#" class="ssm-toggle-nav">
+      <i class="fas fa-bars fa-lg icon"></i>
+    </a>
     <h1 class="titulo">Requerimento Online</h1>
     <div class="menu icon-profile">
       <button class="menu-button"><img src="http://i.pravatar.cc/50"><span class="title">Carlos Eduardo</span></button>
@@ -32,7 +35,7 @@
   <!--Término da estruturação do cabeçalho e dropdow de perfil-->
 
   <!--Estrutura do menu deslizante-->
-  <nav class="menu-des">
+  <nav class="menu-des-pc">
     <div class="icones">
       <a class="icone active" data-container="new-requirement">
         <i class="fas fa-plus fa-lg"></i>
@@ -52,6 +55,29 @@
       </a>
     </div>
   </nav>
+
+  <nav class="menu-des-mobile">
+      <h1 id="titulo-mobile">Requerimento Online</h1>
+      <div class="icones">
+        <a class="icone active" data-container="new-requirement">
+          <i class="fas fa-plus fa-lg"></i>
+          Novo Requerimento
+        </a>
+        <a class="icone" data-container="deferred-requirements">
+          <i class="far fa-check-circle fa-lg"></i>
+          Requerimentos Deferidos
+        </a>
+        <a class="icone" data-container="rejected-requirements">
+          <i class="far fa-times-circle fa-lg"></i>
+          Requerimentos Indeferidos
+        </a>
+        <a class="icone" data-container="pending-requirements">
+          <i class="far fa-clock fa-lg"></i>
+          Requerimentos Pendentes
+        </a>
+      </div>
+    </nav>
+  <div class="ssm-overlay ssm-toggle-nav"></div>
   <!--Término de estruturação do menu deslizante-->
 
   <!--Estruturação do menu de navegação do usuário/estudante-->
@@ -59,79 +85,79 @@
 
     <div class="new-requirement container">
       <ul class="lista">
-        <li>
+        <li id="Histórico Escolar">
           <a>
             <img src="./img/historico.png" alt="">
             <span>Histórico Escolar</span>
           </a>
         </li>
-        <li>
+        <li id="Exame de Suficiência">
           <a>
             <img src="./img/exame.png" alt="">
             <span>Exame de Suficiência</span>
           </a>
         </li>
-        <li>
+        <li id="Enriquecimento Escolar">
           <a>
             <img src="./img/enriquecimento_escolar.png" alt="">
             <span>Enriquecimento Escolar</span>
           </a>
         </li>
-        <li>
+        <li id="Declaração">
           <a>
             <img src="./img/declaracao.png" alt="">
             <span>Declaração</span>
           </a>
         </li>
-        <li>
+        <li id="Convalidação">
           <a>
             <img src="./img/convalidacao.png" alt="">
             <span>Convalidação</span>
           </a>
         </li>
-        <li>
+        <li id="Certificado de Qualificação Profissional">
           <a>
             <img src="./img/certificado.png" alt="">
             <span>Certificado de Qualificação Profissional</span>
           </a>
         </li>
 
-        <li>
+        <li id="Matricula em Unidade Curricular">
           <a>
             <img src="./img/matricula.png" alt="">
             <span>Matricula em Unidade Curricular</span>
           </a>
         </li>
 
-        <li>
+        <li id="Mudança de Turno">
           <a>
             <img src="./img/mudanca_de_turno.png" alt="">
             <span>Mudança de Turno</span>
           </a>
         </li>
 
-        <li>
+        <li id="Mudança de Turma">
           <a>
             <img src="./img/mudanca_de_turma.png" alt="">
             <span>Mudança de Turma</span>
           </a>
         </li>
 
-        <li>
+        <li id="Segunda Chamada">
           <a>
             <img src="./img/Segunda chamada.png" alt="">
             <span>Segunda Chamada</span>
           </a>
         </li>
 
-        <li>
+        <li id="Segunda Via de Crachá">
           <a>
             <img src="./img/cracha.png" alt="">
             <span>Segunda Via de Crachá</span>
           </a>
         </li>
 
-        <li>
+        <li id="Outros">
           <a>
             <img src="./img/Outros.png" alt="">
             <span>Outros</span>
@@ -238,8 +264,11 @@
     </div>
   </main>
   <!--Término da estruturação do menu-->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="js/jquery.slideandswipe.js"></script>
   <script src="js/principal.js"></script>
+  <script src="js/menu-des.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>

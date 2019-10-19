@@ -31,6 +31,8 @@ document.querySelector('.icones').addEventListener('click', function (event) {
 });
 // modal que receberá as informações do usuário
 $('.lista li').click(function () {
+  var id = $(this).attr('id');
+  alert(id);
   Swal.mixin({
     inputPlaceholder: 'Escolha a opção',
     confirmButtonText: 'Próximo',

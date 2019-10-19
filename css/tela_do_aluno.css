@@ -21,6 +21,9 @@ header{
   position: fixed;
   z-index: 1;
 }
+header .icon{
+  display: none;
+}
 header .titulo{
   position: relative;
   margin: 0 42px;
@@ -36,14 +39,17 @@ header .icon-profile{
 /*término da custonomização do cabeçalho*/
 
 /*Inicio da custonomização do do menu deslizante*/
-
-.menu-des{
+#titulo-mobile{
+  display: none;
+}
+.menu-des-pc{
   background-color:rgb(55, 57, 59);
   height:100vh;
   width: 270px;
-  position: absolute;
-  transition: all 0.8s ease;
   position: fixed;
+}
+.menu-des-mobile{
+  display: none;
 }
 .icones{
   display: flex;
@@ -334,6 +340,7 @@ main {
   resize: none;
   font-family: 'DM Sans', sans-serif;
 }
+/* responsividade para celulares menores (Principalmente pra iphone 5s!!!) */
 @media (max-width: 330px) {
   main {
     margin: 0;
@@ -369,8 +376,31 @@ main {
   .new-requirement .lista a:hover{
     transform: scale(1.2);
   }
-  .menu-des{
+  .menu-des-pc{
     display: none;
+  }
+  .menu-des-mobile{
+    display:block;
+    background-color:rgb(55, 57, 59);
+    height:100vh;
+    width: 270px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+  }
+  .ssm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
   }
   .menu-button > img {
     margin-right: -16px;
@@ -380,9 +410,9 @@ main {
     background-color: #fff;
     border: none;
     padding: 0 8px;
-    padding-right: 8px;
+    padding-right: 20px;
     height: 44px;
-    font-size: 10px;
+    font-size: 14px;
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
@@ -401,9 +431,36 @@ main {
     margin-right: 5px;
   }
   header .titulo{
-    font-size: 0.7rem;
+    display: none;
+  }
+  header .icon{
+    margin: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+  }
+  #titulo-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #248856;
+    font-size: 1.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 0px;
+  }
+  .icones{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size:0.8rem;
   }
 }
+/* Responsividade para telas medianas */
 @media (min-width:330px) and (max-width: 768.98px) {
   main {
     margin: 0;
@@ -432,15 +489,12 @@ main {
     
   }
   .lista li img {
-    width: 90px;
+    width: 115px;
     height: auto;
     margin-bottom: 20px;
   }
   .new-requirement .lista a:hover{
     transform: scale(1.2);
-  }
-  .menu-des{
-    display: none;
   }
   .menu-button > img {
     margin-right: -16px;
@@ -450,9 +504,130 @@ main {
     background-color: #fff;
     border: none;
     padding: 0 8px;
-    padding-right: 8px;
+    padding-right: 20px;
     height: 44px;
-    font-size: 10px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    outline: none !important;
+    background-color: transparent;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .menu-button > img {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+  }
+  header .titulo{
+    display: none;
+  }
+  header .icon{
+    margin: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+  }
+  .icones{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size:0.8rem;
+  }
+  #titulo-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #248856;
+    font-size: 1.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 0px;
+  }
+  .menu-des-pc{
+    display: none;
+  }
+  .menu-des-mobile{
+    display:block;
+    background-color:rgb(55, 57, 59);
+    height:100vh;
+    width: 270px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+  }
+  .ssm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  main {
+    margin: 0;
+  }
+  .container:not(.displayNone) .lista {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    margin: 130px 0;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));;
+  }
+  .container:not(.displayNone) .lista li {
+    margin: 0 50px;
+    margin-bottom: 90px;
+  }
+  .container:not(.displayNone) .lista a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  .container:not(.displayNone) .lista span{
+    text-align: center;
+    color: rgb(56, 54, 54);
+    font-family: 'DM Sans', sans-serif;
+    
+  }
+  .lista li img {
+    width: 115px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .new-requirement .lista a:hover{
+    transform: scale(1.2);
+  }
+
+  .menu-button > img {
+    margin-right: -16px;
+  }
+  .menu-button {
+    background: none;
+    background-color: #fff;
+    border: none;
+    padding: 0 8px;
+    padding-right: 20px;
+    height: 44px;
+    font-size: 16px;
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
@@ -473,11 +648,67 @@ main {
   header .titulo{
     font-size: 1rem;
   }
-
+  header .icon{
+    margin: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+  }
+  .icones{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size:0.8rem;
+  }
+  #titulo-mobile{
+    display: flex;
+  }
+  .menu-des-pc{
+    display: none;
+  }
+  .menu-des-mobile{
+    display:block;
+    background-color:rgb(55, 57, 59);
+    height:100vh;
+    width: 270px;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+  }
+  .ssm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+  }
+  #titulo-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #248856;
+    font-size: 1.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 0px;
+  }
 }
 
 
-/* responsividade tela grande*/
+
+
+/* responsividade resolução de computador 1080*/
 @media (min-width: 1800px) {
   body{
     overflow: hidden;
