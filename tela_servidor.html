@@ -12,6 +12,9 @@
 <body>
   <header>
     <!--estrutura do cabeçalho e dropdow de perfil-->
+    <a href="#" class="ssm-toggle-nav" title="open nav">
+      <i class="fas fa-bars fa-lg icon"></i>
+    </a>
     <h1 class="titulo">Requerimento Online</h1>
     <div class="menu icon-profile">
       <button class="menu-button"><img src="https://i.pravatar.cc/50"><span class="title">Sergio Ricardo</span></button>
@@ -35,7 +38,7 @@
   <!--Término da estruturação do cabeçalho e dropdow de perfil-->
 
   <!--Estrutura do menu deslizante-->
-  <nav class="menu-des">
+  <nav class="menu-pc menu-mobile">
     <div class="icones">
       <a class="icone active" data-container="caixa_entrada">
         <i class="far fa-envelope fa-lg"></i>
@@ -55,6 +58,7 @@
       </a>
     </div>
   </nav>
+  <div class="ssm-overlay ssm-toggle-nav"></div>
   <!--Término de estruturação do menu deslizante-->
 
   <!--Estruturação do menu de navegação do servidor-->
@@ -288,6 +292,9 @@
   </main>
   <!--Término da estruturação do menu-->
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="js/touch.js"></script>
+  <script src="js/jquery.slideandswipe.js"></script>
   <script src="js/tela_servidor.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

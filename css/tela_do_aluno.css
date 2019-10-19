@@ -723,10 +723,6 @@ main {
     margin: 0px 0;
   }
 }
-
-
-
-
 /* responsividade resolução de computador 1080*/
 @media (min-width: 1800px) {
   body{

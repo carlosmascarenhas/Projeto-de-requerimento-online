@@ -23,6 +23,9 @@ header{
   position: fixed;
   z-index: 1;
 }
+header .icon{
+  display: none;
+}
 header .titulo{
   position: relative;
   margin: 0 42px;
@@ -39,12 +42,13 @@ header .icon-profile{
 
 /*Inicio da custonomização do do menu deslizante*/
 
-.menu-des{
+#titulo-mobile{
+  display: none;
+}
+.menu-pc{
   background-color:rgb(55, 57, 59);
   height:100vh;
   width: 270px;
-  position: absolute;
-  transition: all 0.8s ease;
   position: fixed;
 }
 .icones{
@@ -414,6 +418,356 @@ main {
 .swal2-textarea{
   resize: none;
   font-family: 'DM Sans', sans-serif;
+}
+@media (max-width: 330px) {
+  main {
+    margin-left: 32px;
+    margin-right: 60px;
+  }
+  .menu-mobile{
+    background-color:rgb(55, 57, 59);
+    height:100vh;
+    width: 270px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+  }
+
+  .ssm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+  }
+  .menu-button > img {
+    margin-right: -16px;
+  }
+  .menu-button {
+    background: none;
+    background-color: #fff;
+    border: none;
+    padding: 0 8px;
+    padding-right: 20px;
+    height: 44px;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    outline: none !important;
+    background-color: transparent;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .menu-button > img {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+  header .titulo{
+    display: none;
+  }
+  header .icon{
+    margin: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+  }
+  .icones{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size:0.8rem;
+  }
+  .container:not(.displayNone) .documentos{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 1fr));;
+    margin: 90px 0;
+  }
+  .document-req{
+    width: 150px;
+    height: auto;
+    background-color: #dadada;
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+    margin: 0px 0;
+  }
+  .container:not(.displayNone) .table-box{
+    border-collapse: collapse;
+    margin: 90px 0;
+    font-size: 0.9em;
+    min-width: 70vw;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.container:not(.displayNone) .table-all-requirements{
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 0.9em;
+  min-width: 70vw;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+}
+/* Responsividade para telas medianas */
+@media (min-width:330px) and (max-width: 768.98px) {
+  main {
+    margin-left: 14px;
+    margin-right: 17px;
+  }
+  .menu-button > img {
+    margin-right: -16px;
+  }
+  .menu-button {
+    background: none;
+    background-color: #fff;
+    border: none;
+    padding: 0 8px;
+    padding-right: 20px;
+    height: 44px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    outline: none !important;
+    background-color: transparent;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .menu-button > img {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+  }
+  header .titulo{
+    display: none;
+  }
+  header .icon{
+    margin: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+  }
+  .icones{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size:0.8rem;
+  }
+  #titulo-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #248856;
+    font-size: 1.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 0px;
+  }
+  .menu-mobile{
+    background-color:rgb(55, 57, 59);
+    height:100vh;
+    width: 270px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+  }
+  
+  .ssm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+  }
+  .container:not(.displayNone) .documentos{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));;
+    margin: 90px 0;
+  }
+  .document-req{
+    width: 150px;
+    height: auto;
+    background-color: #dadada;
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+    margin: 0px 0;
+  }
+  .container:not(.displayNone) .table-box{
+    border-collapse: collapse;
+    margin: 90px 0;
+    font-size: 0.9em;
+    max-width: 92vw;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.container:not(.displayNone) .table-all-requirements{
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 0.9em;
+  max-width: 92vw;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  main {
+    margin-left: 42px ;
+    margin-right: 60px;
+  }
+  .menu-button > img {
+    margin-right: -16px;
+  }
+  .menu-button {
+    background: none;
+    background-color: #fff;
+    border: none;
+    padding: 0 8px;
+    padding-right: 20px;
+    height: 44px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    outline: none !important;
+    background-color: transparent;
+    color: #fff;
+    z-index: 1;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  .menu-button > img {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    margin-right: 8px;
+  }
+  header .titulo{
+    font-size: 1rem;
+  }
+  header .icon{
+    margin: 0 20px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+  }
+  .icones{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size:0.8rem;
+  }
+  #titulo-mobile{
+    display: flex;
+  }
+  .menu-mobile{
+    background-color:rgb(55, 57, 59);
+    height:100vh;
+    width: 270px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+  }
+
+  .ssm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+  }
+  #titulo-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #248856;
+    font-size: 1.1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-top: 0px;
+  }
+  .container:not(.displayNone) .documentos{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(160px, 1fr));;
+    margin: 90px 0;
+  }
+  .document-req{
+    width: 150px;
+    height: auto;
+    background-color: #dadada;
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+    margin: 0px 0;
+  }
+  .container:not(.displayNone) .table-box{
+    border-collapse: collapse;
+    margin: 90px 0;
+    font-size: 0.9em;
+    min-width: 90vw;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.container:not(.displayNone) .table-all-requirements{
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 0.9em;
+  min-width: 89vw;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
 }
 /* responsividade tela grande*/
 @media (min-width: 1800px) {
