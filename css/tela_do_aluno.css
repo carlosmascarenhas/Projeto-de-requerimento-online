@@ -48,7 +48,7 @@ header .icon-profile{
   width: 270px;
   position: fixed;
 }
-.menu-des-mobile{
+.nav{
   display: none;
 }
 .icones{
@@ -379,7 +379,7 @@ main {
   .menu-des-pc{
     display: none;
   }
-  .menu-des-mobile{
+  .nav{
     display:block;
     background-color:rgb(55, 57, 59);
     height:100vh;
@@ -556,7 +556,7 @@ main {
   .menu-des-pc{
     display: none;
   }
-  .menu-des-mobile{
+  .nav{
     display:block;
     background-color:rgb(55, 57, 59);
     height:100vh;
@@ -669,7 +669,7 @@ main {
   .menu-des-pc{
     display: none;
   }
-  .menu-des-mobile{
+  .nav{
     display:block;
     background-color:rgb(55, 57, 59);
     height:100vh;
@@ -802,3 +802,4 @@ main {
   }
 }
 /*fim responsividade tela grande*/
+
