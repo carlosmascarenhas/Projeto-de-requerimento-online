@@ -42,7 +42,7 @@ header .icon-profile{
 #titulo-mobile{
   display: none;
 }
-.menu-des-pc{
+.menu-pc{
   background-color:rgb(55, 57, 59);
   height:100vh;
   width: 270px;
@@ -178,7 +178,7 @@ a.active{
 
 /* Main */
 main {
-  position: absolute;
+  position: relative;
   margin-left: 350px;
   margin-right: 60px;
 }
@@ -370,7 +370,7 @@ main {
   .new-requirement .lista a:hover{
     transform: scale(1.2);
   }
-  .menu-des-pc{
+  .menu-mobile{
     background-color:rgb(55, 57, 59);
     height:100vh;
     width: 270px;
@@ -548,7 +548,7 @@ main {
     padding: 15px;
     margin-top: 0px;
   }
-  .menu-des-pc{
+  .menu-mobile{
     background-color:rgb(55, 57, 59);
     height:100vh;
     width: 270px;
@@ -673,7 +673,7 @@ main {
   #titulo-mobile{
     display: flex;
   }
-  .menu-des-pc{
+  .menu-mobile{
     background-color:rgb(55, 57, 59);
     height:100vh;
     width: 270px;
