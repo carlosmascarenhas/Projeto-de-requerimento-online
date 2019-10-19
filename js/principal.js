@@ -29,6 +29,9 @@ document.querySelector('.icones').addEventListener('click', function (event) {
     document.querySelector(`.${container_name}`).classList.remove('displayNone');
   }
 });
+$(document).ready(function() {
+  $('.menu-des-mobile').slideAndSwipe();
+});
 // modal que receberá as informações do usuário
 $('.lista li').click(function () {
   var id = $(this).attr('id');
