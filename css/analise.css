@@ -17,14 +17,14 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 110vh;
     margin-top: 70px;
     animation: arrive 500ms ease-in-out 0.9s forwards;
 }
 .formulario .cont{
     background-color: #ffffff;
     padding: 20px;
-    width: 40vw;
+    min-width: 40vw;
     border-radius: 6px;
     box-shadow: 8px 4px 14px -6px rgba(27, 63, 34, 0.952);
 }
@@ -32,6 +32,8 @@ header h1{
     font-family: 'Muli',sans-serif;
     font-size: .9rem;
     color: #9e9e9e;
+  
+
 }
 .formulario .cont .info p{
     font-family: 'Muli',sans-serif;
@@ -97,13 +99,23 @@ header h1{
     display: flex;
     flex-direction: row;
     padding: 7px 0;
+    border-bottom: .8px solid #b1b1b1;
+   
 }
 #detalhe{
     font-family: 'Muli',sans-serif;
     font-size: .9rem;
     color: #555454;
     padding: 10px 10px;
+    
 }
+.swal2-title,.swal2-select,.swal2-confirm,#swal2-content,.swal2-cancel,.swal2-progress-step,.swal2-validation-message{
+    font-family: 'Muli', sans-serif;
+  }
+  .swal2-textarea{
+    resize: none;
+    font-family: 'DM Sans', sans-serif;
+  }
 @keyframes arrive {
     0% {
       opacity: 0;
@@ -113,5 +125,14 @@ header h1{
     100% {
       opacity: 1;
       transform: translate3d(0, 0, 0);
+    }
+  }
+  @media (min-width: 1800px) {
+    .formulario .cont{
+        background-color: #ffffff;
+        padding: 33vw;
+        max-width: 20000000px;
+        border-radius: 6px;
+        box-shadow: 8px 4px 14px -6px rgba(27, 63, 34, 0.952);
     }
   }
