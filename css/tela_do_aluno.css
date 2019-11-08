@@ -249,14 +249,16 @@ main{
   width: 100%;
   height: 10px;
   background-color: #159952;
-  margin-top: 200px;
+  position: relative;
+  top: 50px;
   border-radius: 0 0 10px 10px;
 }
 .document-req .linha-rej{
   width: 100%;
   height: 10px;
   background-color: #8b0d0d;
-  margin-top: 200px;
+  position: relative;
+  top: 50px;
   border-radius: 0 0 10px 10px;
 }
 .document-req .linha-pen{
@@ -777,14 +779,16 @@ main{
     width: 100%;
     height: 10px;
     background-color: #159952;
-    margin-top: 270px;
+    position: relative;
+    top: 80px;
     border-radius: 0 0 10px 10px;
   }
   .document-req .linha-rej{
     width: 100%;
     height: 10px;
     background-color: #8b0d0d;
-    margin-top: 270px;
+    position: relative;
+    top: 80px;
     border-radius: 0 0 10px 10px;
   }
   .document-req .linha-pen{
