@@ -135,6 +135,16 @@ a{
     resize: none;
     font-family: 'DM Sans', sans-serif;
   }
+  .infos {
+    animation-duration: 3s;
+    animation-delay: .2s;
+  }
+  .fas{
+    animation-duration: 10s;
+    animation-delay: .4s;
+    margin-left: 10px;
+  }
+  
   @media (min-width: 1800px) {
     .formulario{
         background-color: #ffffff;
