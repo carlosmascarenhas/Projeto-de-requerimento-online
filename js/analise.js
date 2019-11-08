@@ -1,85 +1,41 @@
-$('.btn-deferir').click(function () {
+$('.def').click(function () {
     Swal.mixin({
         inputPlaceholder: 'Escolha a opção',
-        confirmButtonText: 'Próximo',
+        confirmButtonText: 'Enviar',
         confirmButtonColor: '#159952',
         allowOutsideClick: false,
         showCloseButton: true,
-      }).queue([
+    }).queue([
         {
-            title: 'Deferir requerimento',
+            title: 'Motivo de escolha',
             input: 'textarea',
             inputPlaceholder: 'Digite aqui',
             inputValidator: (value) => {
-              if (!value) {
-                return 'Por favor detalhe o requerimento!'
-              }
-            },
-          },
-        ])
-        .then((result) => {
-          if (result.value) {
-            const requerimento = result.value;
-            alert(requerimento);
-            const enviar = { requerimento };
-            alert(enviar);
-            $.post("/alunos/enviar", enviar, function (res) {
-              Swal.fire(
-                'Sucesso!',
-                'Requerimento Deferido!',
-                'success',
-              )
-            })
-          }
-          else {
-            Swal.fire(
-              'Cancelado',
-              'Seu requerimento foi cancelado :)',
-              'error'
-            )
-          }
-        })
-    })
-
-    $('.btn-indeferir').click(function () {
-      Swal.mixin({
-          inputPlaceholder: 'Escolha a opção',
-          confirmButtonText: 'Próximo',
-          confirmButtonColor: '#159952',
-          allowOutsideClick: false,
-          showCloseButton: true,
-        }).queue([
-          {
-              title: 'Indeferir Requerimento',
-              input: 'textarea',
-              inputPlaceholder: 'Digite aqui',
-              inputValidator: (value) => {
                 if (!value) {
-                  return 'Por favor detalhe o requerimento!'
+                    return 'Por favor descreva sua escolha para continuar'
                 }
-              },
             },
-          ])
-          .then((result) => {
-            if (result.value) {
-              const requerimento = result.value;
-              alert(requerimento);
-              const enviar = { requerimento };
-              alert(enviar);
-              $.post("/alunos/enviar", enviar, function (res) {
-                Swal.fire(
-                  'Sucesso!',
-                  'Requerimento Indeferido!',
-                  'success',
-                )
-              })
-            }
-            else {
-              Swal.fire(
-                'Cancelado',
-                'Seu requerimento foi cancelado :)',
-                'error'
-              )
-            }
-          })
-      })
+        },
+    ])
+})
+
+$('.ind').click(function () {
+    Swal.mixin({
+        inputPlaceholder: 'Escolha a opção',
+        confirmButtonText: 'Enviar',
+        confirmButtonColor: '#159952',
+        allowOutsideClick: false,
+        showCloseButton: true,
+    }).queue([
+        {
+            title: 'Motivo de escolha',
+            input: 'textarea',
+            inputPlaceholder: 'Digite aqui',
+            inputValidator: (value) => {
+                if (!value) {
+                    return 'Por favor descreva sua escolha para continuar'
+                }
+            },
+        },
+    ])
+})

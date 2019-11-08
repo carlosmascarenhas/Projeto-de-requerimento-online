@@ -7,34 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Projeto de Requerimento Online</title>
     <link rel="stylesheet" href="css/analise.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 
 <body>
     <main>
-        <div class="formulario">
-            <div class="cont">
-                <div class="info">
-                    <div class="id"><h3>Nome do estudante:</h3><p>Carlos Eduardo Mascarenhas de Oliveira</p></div>
-                    <div class="id"><h3>Email:</h3><p>eduard.mascarenhas.ce@gmail.com</p></div>
-                    <div class="id"><h3>RA:</h3><p>123456</p></div>
-                    <div class="id"><h3>CPF:</h3><p>02608155197</p></div>
-                    <div class="id"><h3>Curso:</h3><p>Técnico em Informática Para Internet</p></div>
-                    <div class="id"><h3>Período:</h3><p>6</p></div>
-                   <div class="id"><h3>Turno:</h3><p>Matutino</p></div>
-                    <div class="id"><h3>Turma:</h3><p>B</p></div>
-                    <div class="info-det">
-                        <h3>Detalhamento de pedido:</h3>
-                        <textarea name="detalhe" id="detalhe" cols="30" rows="10"></textarea>
-                    </div>
-                    <button type="submit" class="btn-deferir">Deferir</button>
-                    <button type="submit" class="btn-indeferir">Indeferir</button>
+        <div class="formulario animated slideInUp delay-.9s">
+            <div class="nome-user">
+                <h4><i class="fas fa-user"></i>  Carlos Eduardo Mascarenhas</h4>
+            </div>
+            <div class="infos">
+                <div class="input">RA:<span> 123456</span></div>
+                <div class="input">Email:<span> eduard.mascarenhas.ce@gmail.com</span></div>
+                <div class="input">Período:<span> 6</span></div>
+                <div class="input">Turno:<span> Matutino</span></div>
+                <div class="input">Turma:<span> B</span></div>
+                <div class="input-det">
+                    Detalhe do pedido:
+                    <span>
+                        sssssssssssssssssssssssssssssssss
+                    </span>
                 </div>
+                <div class="input-donw">
+                    <a href="path_to_file" download="proposed_file_name">Baixe o anexo</a> <i
+                        class="fas fa-arrow-down animated slideInDown	infinite  delay-1s"></i>
+                </div>
+                <button type="button" class="btn def">Deferir</button>
+                <button type="button" class="btn ind">Indeferir</button>
             </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/analise.js"></script>
+    <script src="https://kit.fontawesome.com/4535967125.js"></script>
 </body>
 
 </html>

@@ -1,138 +1,155 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
 body{
     margin: 0;
     padding: 0;
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
-    height: 130vh;
+    height: 100vh;
 }
-header h1{
-    margin: 0;
-    margin-left: 20px;
-    margin-top: 20px;
-    font-size: 1.8rem;
-    color: #ffffff;
-    font-family: 'Muli', sans-serif;
-}
-.formulario{
+main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 110vh;
-    margin-top: 70px;
-    animation: arrive 500ms ease-in-out 0.9s forwards;
-}
-.formulario .cont{
-    background-color: #ffffff;
-    padding: 20px;
-    min-width: 40vw;
-    border-radius: 6px;
-    box-shadow: 8px 4px 14px -6px rgba(27, 63, 34, 0.952);
-}
-.formulario .cont .info h3{
-    font-family: 'Muli',sans-serif;
-    font-size: .9rem;
-    color: #9e9e9e;
-  
-
-}
-.formulario .cont .info p{
-    font-family: 'Muli',sans-serif;
-    font-size: .9rem;
-    color: #555454;
-    margin: auto 10px;
-}
-.formulario .cont .info .info-det h3{
-    all: unset;
-    font-family: 'Muli',sans-serif;
-    font-size: .9rem;
-    padding: 10px 0;
-    color: #9e9e9e;
-}
-.formulario .cont .info .info-det{
-    display: flex;
-    flex-direction: column;
-}
-.formulario .cont .info .info-det #detalhe{
-   resize: none;
-   outline: none;
-   border: solid .5px #9e9e9e;
-   border-radius: 6px;
-}
-.formulario .cont .info .btn-deferir{
-    margin-top: 40px;
-    padding: 20px;
-    width: 130px;
-    background-color: none;
-    border: solid 1px #009245;
-    border-radius: 4px;
-    text-transform: uppercase;
-    outline: none;
-    overflow: hidden;
-    cursor: pointer;
-    color: #009245;
-    transition: background-color .3s ease-in-out;
-}
-.formulario .cont .info .btn-indeferir{
-    margin-top: 40px;
-    padding: 20px;
-    width: 130px;
-    background: none;
-    border: solid 1px #631123;
-    border-radius: 4px;
-    text-transform: uppercase;
-    outline: none;
-    overflow: hidden;
-    cursor: pointer;
-    margin-left: 20px; 
-    color: #631123;
-    transition: background-color .3s ease-in-out;
-}
-.formulario .cont .info .btn-deferir:hover{
-    background-color: #25774b;
-    color: #ffffff;
-}
-.formulario .cont .info .btn-indeferir:hover{
-    background-color: #631123;
-    color: #ffffff;
-}
-.id{
-    display: flex;
-    flex-direction: row;
-    padding: 7px 0;
-    border-bottom: .8px solid #b1b1b1;
-   
-}
-#detalhe{
-    font-family: 'Muli',sans-serif;
-    font-size: .9rem;
-    color: #555454;
-    padding: 10px 10px;
+    height: 100vh;
     
 }
-.swal2-title,.swal2-select,.swal2-confirm,#swal2-content,.swal2-cancel,.swal2-progress-step,.swal2-validation-message{
+.formulario{
+    background-color: #ffffff;
+    width: 71vw;
+    max-height: 75vh;
+    border-radius: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.nome-user{
+    margin-left: 33px;
     font-family: 'Muli', sans-serif;
+    color: #00a99d;
+}
+.infos{ 
+    margin-left: 28px;
+}
+.input{
+    max-width:65vw;
+    background-color: rgb(226, 226, 226);
+    margin: 30px 0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: 'Muli', sans-serif;
+    color: rgb(102, 103, 104);
+}
+.input-det{
+    max-width:65vw;
+    background-color: rgb(226, 226, 226);
+    margin: 30px 0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: 'Muli', sans-serif;
+    color: rgb(102, 103, 104);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 20vh;
+    text-align: justify;
+    word-wrap: break-word;
+}
+.input-donw{
+    max-width:10vw;
+    background-color: rgb(226, 226, 226);
+    margin: 30px 0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: 'Muli', sans-serif;
+    color: #00a99d;
+    text-align: center;
+    cursor: pointer;
+}
+.input span{
+    color: #00a99d;
+}
+.input-det span{
+    color: #00a99d;
+}
+textarea{
+    resize: none;
+    border-radius: 4px;
+    background: rgb(226, 226, 226);
+    border: none;
+    font-family: 'Muli', sans-serif;
+   font-size: 1rem;
+   color: #00a99d;
+   width: 67vw;
+}
+a{
+    text-decoration: none;
+    color: #00a99d;
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 0 8px 8px 0px;
+    
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(226, 226, 226);
+    border-radius: 7.5px;
+  }
+  .btn{
+      margin: 10px 0;
+  }
+  .def{
+    background: rgb(29, 165, 113);
+    border: none;
+    padding: 15px;
+    width: 100px;
+    color: #ffffff;
+    outline: none;
+    border-radius: 4px;
+    font-family: 'Muli', sans-serif;  
+    cursor: pointer;
+  }
+  .ind{
+    background: rgb(60, 62, 65);
+    border: none;
+    padding: 15px;
+    width: 100px;
+    color: #ffffff;
+    outline: none;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-family: 'Muli', sans-serif;
+    cursor: pointer;
+  }
+  .def:hover{
+    background: rgb(34, 197, 135);
+  }
+  .ind:hover{
+    background: rgb(83, 86, 90);
+  }
+  .swal2-title,.swal2-select,.swal2-confirm,#swal2-content,.swal2-cancel,.swal2-progress-step,.swal2-validation-message{
+    font-family: 'DM Sans', sans-serif;
   }
   .swal2-textarea{
     resize: none;
     font-family: 'DM Sans', sans-serif;
   }
-@keyframes arrive {
-    0% {
-      opacity: 0;
-      transform: translate3d(0, 50px, 0);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
   @media (min-width: 1800px) {
-    .formulario .cont{
+    .formulario{
         background-color: #ffffff;
-        padding: 33vw;
-        max-width: 20000000px;
-        border-radius: 6px;
-        box-shadow: 8px 4px 14px -6px rgba(27, 63, 34, 0.952);
+        width: 71vw;
+        max-height: 72vh;
+        border-radius: 8px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .infos{ 
+        margin-left: 43px;
+    }
+    .nome-user{
+        margin-left: 48px;
+        font-family: 'Muli', sans-serif;
+        color: #00a99d;
     }
   }
