@@ -4,22 +4,19 @@ body{
     margin: 0;
     padding: 0;
     background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
-    height: 100vh;
+    height: 128vh;
 }
 main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    
+    margin-top: 40px;
 }
 .formulario{
     background-color: #ffffff;
-    width: 71vw;
-    max-height: 75vh;
+    width: 50vw;
+    height: auto;
     border-radius: 8px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 .nome-user{
     margin-left: 33px;
@@ -27,10 +24,10 @@ main{
     color: #00a99d;
 }
 .infos{ 
-    margin-left: 28px;
+    margin-left: 22px;
 }
 .input{
-    max-width:65vw;
+    max-width:45vw;
     background-color: rgb(226, 226, 226);
     margin: 30px 0;
     padding: 12px;
@@ -39,7 +36,7 @@ main{
     color: rgb(102, 103, 104);
 }
 .input-det{
-    max-width:65vw;
+    max-width:45vw;
     background-color: rgb(226, 226, 226);
     margin: 30px 0;
     padding: 12px;
@@ -148,18 +145,48 @@ a{
   @media (min-width: 1800px) {
     .formulario{
         background-color: #ffffff;
-        width: 71vw;
-        max-height: 72vh;
+        width: 40vw;
+        height: auto;
         border-radius: 8px;
-        overflow-y: auto;
-        overflow-x: hidden;
+    }
+    body{
+      overflow: hidden;
+    }
+    main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 95vh;
     }
     .infos{ 
-        margin-left: 43px;
+        margin-left: 38px;
     }
     .nome-user{
         margin-left: 48px;
         font-family: 'Muli', sans-serif;
         color: #00a99d;
     }
+    .input{
+      max-width:35vw;
+      background-color: rgb(226, 226, 226);
+      margin: 30px 0;
+      padding: 12px;
+      border-radius: 4px;
+      font-family: 'Muli', sans-serif;
+      color: rgb(102, 103, 104);
+  }
+  .input-det{
+    max-width:35vw;
+    background-color: rgb(226, 226, 226);
+    margin: 30px 0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: 'Muli', sans-serif;
+    color: rgb(102, 103, 104);
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 20vh;
+    text-align: justify;
+    word-wrap: break-word;
+}
   }

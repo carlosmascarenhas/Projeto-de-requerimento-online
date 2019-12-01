@@ -408,6 +408,7 @@ main {
   z-index: 1;
   border-radius: 8px;
   right: 1px;
+
 }
 .container:not(.displayNone) .filter .drop a{
   display: flex;
@@ -805,6 +806,11 @@ main {
   .document-req:hover{
     transform:translateY(-30px);
   }
+  main {
+    position: absolute;
+    margin-left: 421px;
+    margin-right: 60px;
+}
   .container:not(.displayNone) .content-table{
     min-width: 78vw;
 }
@@ -891,6 +897,23 @@ main {
     color: rgb(56, 54, 54);
     font-family: 'DM Sans', sans-serif;
     
+  }
+  .container:not(.displayNone) .filter{
+    background-color: #e4e4e4;
+    width: 150px;
+    height: 50px;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #8f8f8f;
+    border: none;
+    outline: none;
+    overflow: none;
+    cursor: pointer;
+    font-family: 'Source Sans Pro',sans-serif;
+  
   }
 }
 /*fim responsividade tela grande*/
