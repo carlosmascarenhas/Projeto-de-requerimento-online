@@ -9,10 +9,24 @@ document.querySelector(".menu-button").addEventListener("click", function (event
   document.querySelector('.menu-button').classList.add('text-black');
 });
 
+document.querySelector(".filter").addEventListener("click", function (event) {
+  event.preventDefault();
+  event.stopPropagation();
+  document.querySelector('.drop').classList.remove('hidden');
+  document.querySelector('.filter').classList.add('text-black');
+});
+
 document.getElementsByTagName('body')[0].addEventListener('click', function (event) {
   if (!event.target.classList.contains('.menu-button')) {
     document.querySelector('.menu-dropdown').classList.add('hidden');
     document.querySelector('.menu-button').classList.remove('text-black');
+  }
+});
+
+document.getElementsByTagName('body')[0].addEventListener('click', function (event) {
+  if (!event.target.classList.contains('.filter')) {
+    document.querySelector('.drop').classList.add('hidden');
+    document.querySelector('.filter').classList.remove('text-black');
   }
 });
 
