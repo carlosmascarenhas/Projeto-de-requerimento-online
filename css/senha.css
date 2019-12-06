@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif;
+  background-size: cover;
+  background: linear-gradient(45deg, #00a99d 10%, #009245 90%);
+  height: 100vh;
+}
+
+.cadastro{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*pai do titulo, atribuindo animação*/
+.cadastro_header{
+  text-align: center;
+  opacity: 0;
+  transform: translate3d(0, 500px, 0);
+  animation: arrive 500ms ease-in-out 0.5s forwards;
+}
+/**/
+
+/*estilização do titulo*/
+.titulo{
+  margin-bottom: -10px;
+  font-weight: 500;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.8rem;
+}
+/*fim da estilização*/
+
+/*estilização do formulário*/
+.form{
+  width: 350px;
+  margin-top: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate3d(0, 500px, 0);
+  animation: arrive 500ms ease-in-out 0.4s forwards;
+  box-shadow: 8px 4px 14px -6px rgba(27, 63, 34, 0.952);
+}
+/*fim da estilização*/
+
+/*estilização das inputs*/
+.form_input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  -webkit-appearance: none;
+  border: 0;
+  outline: 0;
+  transition: 0.3s;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #0d2b1b;
+}
+
+input:focus {
+  background-color: rgb(243, 247, 247);
+  font-family: 'Muli', sans-serif;
+  color: #756874;
+  font-size: 18px;
+}
+/*fim da estilização*/
+
+/*animação de quando se erra algo no formulário*/
+.form--no {
+  animation: NO 1s ease-in-out;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+/**/
+
+/*estilização do botão*/
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Muli', sans-serif;
+  -webkit-appearance: none;
+  outline: 0;
+  border: 0;
+  color: white;
+  background: rgb(29, 78, 143);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(33, 84, 194);
+}
+/*fim da estilização do botão*/
+
+/*processo de animação quando se erra algo no formulário*/
+@keyframes NO {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+/**/
+
+/*animação que faz todo o conteudo da página aparecer vindo de baixo para cima*/
+@keyframes arrive {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/**/
+
+/*logo ifms*/
+.logo {
+  margin: auto 20px;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  transform: translate3d(0, 1000px, 0);
+  animation: arrive 500ms ease-in-out 0.4s forwards;
+}
+/**/
+
+@media (min-width: 1400px) {
+  body{
+    overflow: hidden;
+  }
+}
+/*custonomização scroll*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background: #c5c5c5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #858585;
+  border-radius: 7.5px;
+}
+/*fim scroll*/
