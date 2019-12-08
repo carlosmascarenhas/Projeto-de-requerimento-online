@@ -443,7 +443,7 @@ main{
   }
   .document-req{
     width: 150px;
-    height: auto;
+    height: 212px;
     background-color: #dadada;
     border-radius: 10px;
     transition: transform .5s ease-in-out;
@@ -575,7 +575,7 @@ main{
   }
   .document-req{
     width: 150px;
-    height: auto;
+    height: 212px;
     background-color: #dadada;
     border-radius: 10px;
     transition: transform .5s ease-in-out;
@@ -711,7 +711,7 @@ main{
   }
   .document-req{
     width: 150px;
-    height: auto;
+    height: 212px;
     background-color: #dadada;
     border-radius: 10px;
     transition: transform .5s ease-in-out;
