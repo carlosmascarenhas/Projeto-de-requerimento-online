@@ -9,12 +9,6 @@ document.querySelector(".menu-button").addEventListener("click", function (event
   document.querySelector('.menu-button').classList.add('text-black');
 });
 
-document.querySelector(".filter").addEventListener("click", function (event) {
-  event.preventDefault();
-  event.stopPropagation();
-  document.querySelector('.drop').classList.remove('hidden');
-  document.querySelector('.filter').classList.add('text-black');
-});
 
 document.getElementsByTagName('body')[0].addEventListener('click', function (event) {
   if (!event.target.classList.contains('.menu-button')) {
@@ -23,12 +17,6 @@ document.getElementsByTagName('body')[0].addEventListener('click', function (eve
   }
 });
 
-document.getElementsByTagName('body')[0].addEventListener('click', function (event) {
-  if (!event.target.classList.contains('.filter')) {
-    document.querySelector('.drop').classList.add('hidden');
-    document.querySelector('.filter').classList.remove('text-black');
-  }
-});
 
 function hidden_containers() {
   document.querySelectorAll('.container').forEach(function (element) {

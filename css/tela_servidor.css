@@ -268,12 +268,6 @@ main {
 .document-req a:hover{
   transform: scale(1.2);
 }
-.container:not(.displayNone) .documentos{
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(160px, 1fr));;
-}
 .document-req{
   width: 150px;
   height: 210px;
@@ -281,6 +275,10 @@ main {
   border-radius: 10px;
   transition: transform .5s ease-in-out;
   margin: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .document-req:hover{
   transform:translateY(-10px);
@@ -289,21 +287,24 @@ main {
   width: 100%;
   height: 10px;
   background-color: #159952;
-  margin-top: 200px;
+  position: relative;
+  top: 50px;
   border-radius: 0 0 10px 10px;
 }
 .document-req .linha-rej{
   width: 100%;
   height: 10px;
   background-color: #8b0d0d;
-  margin-top: 200px;
+  position: relative;
+  top: 50px;
   border-radius: 0 0 10px 10px;
 }
 .document-req .linha-pen{
   width: 100%;
   height: 10px;
+  position: relative;
+  top: 50px;
   background-color: #2e2a2a;
-  margin-top: 200px;
   border-radius: 0 0 10px 10px;
 }
 .deferred-requirements h1{
@@ -347,6 +348,10 @@ main {
   color: rgb(56, 54, 54);
   font-family: 'DM Sans', sans-serif;
 }
+.documentos li img {
+  width: 100px;
+  height: auto;
+}
 /*Término de custonomização dos documentos/requerimentos*/
 
 /*Custonomização Da input de busca e filtro*/
@@ -358,7 +363,7 @@ main {
 }
 .container:not(.displayNone) .busca-requerimento{
   background-color: #e4e4e4;
-  min-width: 62vw;
+  min-width: 63vw;
   height: 50px;
   border-radius:4px 0 0 4px;
   outline: 0;
@@ -370,15 +375,15 @@ main {
   color: #6f7172;
 }
 .container:not(.displayNone) .filter{
-  background-color: #e4e4e4;
-  width: 110px;
+  background-color: #159952;
+  width: 90px;
   height: 50px;
   border-radius: 0 4px 4px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 15px;
-  color: #8f8f8f;
+  color: #fff;
   border: none;
   outline: none;
   overflow: none;
@@ -386,44 +391,10 @@ main {
   font-family: 'Source Sans Pro',sans-serif;
 
 }
-.container:not(.displayNone) .filter h3{
-  position: relative;
-  left: 10px;
-}
-.filter::before{
-  content: "";
-    top: 0;
-    bottom: 0;
-    z-index: 2;
-    height:37px;
-    width: 1px;
-    background-color: rgba(51,51,51,.1);
-}
 
-.container:not(.displayNone) .filter .drop{
-  position: absolute;
-  top: 152px;
-  background-color: #f9f9f9;
-  min-width: 158px;
-  z-index: 1;
-  border-radius: 8px;
-  right: 1px;
 
-}
-.container:not(.displayNone) .filter .drop a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 10px 0;
-  color: #000;
-  font-family: 'Source Sans Pro',sans-serif;
 
-}
-.container:not(.displayNone) .filter .drop a:hover{
-  background-color: rgb(216, 215, 215);
-  color: rgb(21, 94, 49);
-}
+
 
 /*término custonomização do filtro*/
 
@@ -803,6 +774,19 @@ main {
   body{
     overflow: hidden;
   }
+  .container:not(.displayNone) .busca-requerimento{
+    background-color: #e4e4e4;
+    min-width: 65vw;
+    height: 50px;
+    border-radius:4px 0 0 4px;
+    outline: 0;
+    border: none;
+    font-family: 'Source Sans Pro',sans-serif;
+    padding: 10px;
+    font-size: 15px;
+    padding-left: 20px;
+    color: #6f7172;
+  }
   .document-req:hover{
     transform:translateY(-30px);
   }
@@ -851,27 +835,34 @@ main {
     background-color: #dadada;
     border-radius: 10px;
     transition: transform .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .document-req .linha{
     width: 100%;
     height: 10px;
     background-color: #159952;
-    margin-top: 270px;
+    position: relative;
+    top: 80px;
     border-radius: 0 0 10px 10px;
   }
   .document-req .linha-rej{
     width: 100%;
     height: 10px;
     background-color: #8b0d0d;
-    margin-top: 270px;
+    position: relative;
+    top: 80px;
     border-radius: 0 0 10px 10px;
   }
   .document-req .linha-pen{
-    width: 100%;
-    height: 10px;
-    background-color: #312d2d;
-    margin-top: 270px;
-    border-radius: 0 0 10px 10px;
+      width: 100%;
+      height: 10px;
+      position: relative;
+      top: 80px;
+      background-color: #2e2a2a;
+      border-radius: 0 0 10px 10px;
   }
   .container:not(.displayNone) .documentos {
     list-style: none;
@@ -898,22 +889,33 @@ main {
     font-family: 'DM Sans', sans-serif;
     
   }
-  .container:not(.displayNone) .filter{
-    background-color: #e4e4e4;
-    width: 150px;
-    height: 50px;
-    border-radius: 0 4px 4px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    color: #8f8f8f;
-    border: none;
-    outline: none;
-    overflow: none;
-    cursor: pointer;
-    font-family: 'Source Sans Pro',sans-serif;
-  
+  .container:not(.displayNone) .documentos span{
+    text-align: center;
+    color: rgb(56, 54, 54);
+    font-family: 'DM Sans', sans-serif;
+    
+  }
+.container:not(.displayNone) .filter{
+  background-color: #159952;
+  width: 90px;
+  height: 50px;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  outline: none;
+  overflow: none;
+  cursor: pointer;
+  font-family: 'Source Sans Pro',sans-serif;
+
+}
+
+  .documentos li img {
+    width: 110px;
+    height: auto;
   }
 }
 /*fim responsividade tela grande*/

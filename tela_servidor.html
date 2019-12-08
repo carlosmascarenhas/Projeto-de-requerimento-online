@@ -115,8 +115,9 @@
         <li>
           <a href="#">
             <div class="document-req">
-              <div class="linha"></div>
-            </div>
+              <img src="img/exame.png" alt="">  
+            <div class="linha"></div>
+          </div>
           </a>
         </li>
         <li>
@@ -174,15 +175,8 @@
           <input type="search" class="busca-requerimento" placeholder="Buscar Requerimento">
         </div>
         <div class="filtro">
-          <div class="filter">
-            <h3>Filtro  <i class="fas fa-arrow-down fa-sm"></i> </h3>
-            <div class="drop hidden">
-                <a href="#">Recente</a>
-                <a href="#">Mês passado</a>
-                <a href="#">Ultima semana</a>
-              </div>
-          </div>
-        </div>
+          <button type="button" class="filter">Buscar</button>
+        </div> 
       </div>
       <div class="requirements">
         <table class="table-all-requirements">
@@ -196,7 +190,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Carlos Eduardo Mascarenhas Oliveira</td>
+              <td onclick="window.location='analise.html'">Carlos Eduardo</td>
               <td>Mudança de turno</td>
               <td>19 de ago</td>
               <td>Deferido</td>
