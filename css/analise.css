@@ -141,7 +141,133 @@ a{
     animation-delay: .4s;
     margin-left: 10px;
   }
-  
+  @media (max-width: 330px) {
+    body{
+      height: 100%;
+    }
+    main{
+      height: 141vh;
+    }
+    .formulario{
+      background-color: #ffffff;
+      width:92vw;
+      height: auto;
+      border-radius: 8px;
+  }
+  .input{
+    max-width:73vw;
+    background-color: rgb(226, 226, 226);
+    margin: 30px 0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: 'Muli', sans-serif;
+    color: rgb(102, 103, 104);
+}
+.input #email{
+  font-size: 14px;
+}
+.input-det{
+  max-width:73vw;
+  background-color: rgb(226, 226, 226);
+  margin: 30px 0;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  color: rgb(102, 103, 104);
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 20vh;
+  text-align: justify;
+  word-wrap: break-word;
+}
+.input-donw{
+  max-width:55vw;
+  background-color: rgb(226, 226, 226);
+  margin: 30px 0;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  color: #00a99d;
+  text-align: center;
+  cursor: pointer;
+}
+.nome-user{
+  margin-left: 22px;
+  font-family: 'Muli', sans-serif;
+  color: #00a99d;
+}
+  }
+  @media (min-width:330px) and (max-width: 768.98px) {
+    .formulario{
+      background-color: #ffffff;
+      width: 94vw;
+      height: auto;
+      border-radius: 8px;
+  }
+  .infos{ 
+    margin-left: 18px;
+}
+  .input{
+    max-width:78vw;
+    background-color: rgb(226, 226, 226);
+    margin: 30px 0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: 'Muli', sans-serif;
+    color: rgb(102, 103, 104);
+}
+.input-det{
+  max-width:78vw;
+  background-color: rgb(226, 226, 226);
+  margin: 30px 0;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  color: rgb(102, 103, 104);
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 20vh;
+  text-align: justify;
+  word-wrap: break-word;
+}
+.input-donw{
+  max-width:38vw;
+  background-color: rgb(226, 226, 226);
+  margin: 30px 0;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: 'Muli', sans-serif;
+  color: #00a99d;
+  text-align: center;
+  cursor: pointer;
+}
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    body{
+      height: 100%;
+    }
+    main{
+      height: 194vh;
+    }
+    .formulario{
+      background-color: #ffffff;
+      width: 54vw;
+      height: auto;
+      border-radius: 8px;
+  }
+  .input-donw{
+    max-width:18vw;
+    background-color: rgb(226, 226, 226);
+    margin: 30px 0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: 'Muli', sans-serif;
+    color: #00a99d;
+    text-align: center;
+    cursor: pointer;
+  }
+  }
+
   @media (min-width: 1800px) {
     .formulario{
         background-color: #ffffff;
